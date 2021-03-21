@@ -40,7 +40,7 @@ $title = 'About Us';
       <div class="col-sm-6 padding-bottom"> <img src="https://fortescueinvestment.com/ui/images/about.jpg" alt="About Us" class="img-responsive"> </div>
       <div class="col-sm-6 about_right padding-bottom">
         <h2 class="bottom10">More About <span class="blue_t">Roctera Assets</span></h2>
-        <p class="bottom30">Rocktera Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products. All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
+        <p class="bottom30">ForexAssetsDigital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products. All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
         <p class="bottom30">An investment firm that offers a range of digital asset strategy solutions to institutional investors.</p>
         <ul class="check">
           <li><i class="icon-check"></i>Utilize real-time market data and order execution technology.</li>
@@ -72,7 +72,7 @@ $title = 'About Us';
       <div class="col-sm-12 text-center wow fadeInDown">
         <h2 class="bottom10 text-capitalize">Our <span class="blue_t">Teams </span></h2>
         <h3 class="bottom10 text-capitalize">Led by bold and <span class="blue_t">innovative </span>thinkers</h3>
-        <p class="bottom20" >Rocktera has been helping marketing teams optimize delivery of awesome customer experiences for <br>decades. With a team of trailblazers and innovators at the helm, Rocktera is <br>trusted by some of the world’s top companies across the globe.</p><br>
+        <p class="bottom20" >ForexAssetshas been helping marketing teams optimize delivery of awesome customer experiences for <br>decades. With a team of trailblazers and innovators at the helm, ForexAssetsis <br>trusted by some of the world’s top companies across the globe.</p><br>
       </div>
     </div>
     <div class="row">
@@ -118,7 +118,7 @@ $title = 'About Us';
                 </div>
                 <div class="media-body">
                   <h4 class="bottom10">We Are Trusted</h4>
-                  <p class="bottom15">Over $55B and counting - More than 175,000 people trust over $55 billion with Rocktera Assets companies.</p>
+                  <p class="bottom15">Over $55B and counting - More than 175,000 people trust over $55 billion with ForexAssetsAssets companies.</p>
                 </div>
               </div>
               <div class="media">
@@ -136,7 +136,7 @@ $title = 'About Us';
                 </div>
                 <div class="media-body">
                   <h4 class="bottom10">Powerful backing</h4>
-                  <p>Powerful backing - Rocktera Assets is backed by $1B in investment from some of the world's largest financial institutions.</p>
+                  <p>Powerful backing - ForexAssetsAssets is backed by $1B in investment from some of the world's largest financial institutions.</p>
                 </div>
               </div>
             </div>
