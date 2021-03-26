@@ -58,12 +58,12 @@
             </div>
         </div>
         <br><br>
-    <footer style="background-color: white; color: #c7c7c7; text-align: center; font-size: 12px;">
-        <div style="background-color: #ffcc29; color: white; padding: 20px 0px;">
+    <footer style="background-color: #373534; color: #c7c7c7; text-align: center; font-size: 12px;">
+        <div style="background-color: #ffcc29; color: #373534; padding: 20px 0px;">
             <p>Great to have you on board</p>
         </div>
-            <center style="padding: 10px;"><p>Dalton House, 60 Windsor Ave, London SW19 2RR, United Kingdom</p>
-            <span style="margin: 3px 7px;">Mail: support@forex-assets.exchange</span>
+            <center style="padding: 10px;"><p>18, 6 Wester Hailes Park, Edinburgh EH14 3AF, United Kingdom</p>
+            <span style="margin: 3px 7px;">support@forex-assets.exchange</span>
     </footer>
     </div>
 </body>

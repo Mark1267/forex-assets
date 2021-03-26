@@ -231,18 +231,12 @@
                 <?php endif; ?>
                 <li class=" nav-item"><a href="<?php echo BASE_URL . '/'; ?>logout.php"><i class="la la-lock"></i><span class="menu-title" data-i18n="nav.others.main">Log Out</span></a></li>
             </ul>
-
             <div class="navbar-header">
                 <ul class="nav navbar-nav flex-row">
-                    <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
                     <li class="nav-item col-12 text-center">
                         <a class="navbar-brand" href="index.html">
-                            <img class="brand-logo" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/dashboard/'?>images/logo/logo.png" style="width: 100px;">
-                            <h3 class="brand-text">Rocktera Assets</h3>
+                        <img class="brand-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/open/';?>images/logo-dark.png">
                         </a>
-                    </li>
-                    <li class="nav-item d-md-none">
-                        <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a>
                     </li>
                 </ul>
             </div>

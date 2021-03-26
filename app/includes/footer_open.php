@@ -5,7 +5,7 @@
       <div class="contact_inner">
         <i class="icon-phone4"></i>
         <h5><strong>(+44) 791-921-4075</strong></h5>
-        <a href="#.">info@forex-assets.co.uk</a>
+        <a href="#.">support@forex-assets.exchange</a>
       </div>
     </div>
     <div class="col-sm-3">
@@ -18,8 +18,8 @@
     <div class="col-sm-3">
       <div class="contact_inner">
         <i class="icon-location"></i>
-        <h5><strong>Dalton House, 60 Windsor Ave,</strong></h5>
-        <h5>London, UK SW19 2RR</h5>
+        <h5><strong>18, 6 Wester Hailes Park,</strong></h5>
+        <h5>Edinburgh EH14 3AF, UK</h5>
       </div>
     </div>
   </div>

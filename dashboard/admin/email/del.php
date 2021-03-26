@@ -1,6 +1,7 @@
 <?php 
 include('../../../path.php');
 include(ROOT_PATH . '/app/controllers/contacts.php');
+adminOnly();
 $title = 'Delete';
 if(isset($_GET['id'])){
     $mail = selectOne('mail', ['id' => $_GET['id']]);

@@ -70,8 +70,8 @@
                 <p>Great to have you on board</p>
             </div>
             <center style="padding: 10px;">
-                <p>Dalton House, 60 Windsor Ave, London SW19 2RR, United Kingdom</p>
-                <span style="margin: 3px 7px;">Mail: support@forex-assets.exchange</span></center>
+                <p>18, 6 Wester Hailes Park, Edinburgh EH14 3AF, United Kingdom</p>
+                <span style="margin: 3px 7px;">support@forex-assets.exchange</span></center>
         </footer>
     </div>
 </body>
