@@ -20,7 +20,7 @@ $title = 'Home';
     <!-- SLIDE  -->
       <li data-transition="fade">
         <!-- MAIN IMAGE -->
-        <img src="https://images.unsplash.com/photo-1490318134124-34dadea1b8b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" data-bgposition="center center" data-bgfit="cover">							
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=702&q=80" alt="" data-bgposition="center center" data-bgfit="cover">							
        <!-- LAYER NR. 1 -->
         <h1 class="tp-caption tp-resizeme uppercase text-center" 														
         data-x="['center','center','center','center']" data-hoffset="['0','15','15','15']" 
@@ -54,7 +54,7 @@ $title = 'Home';
         </div>
       </li>
       <li data-transition="fade">
-        <img src="https://images.unsplash.com/photo-1599547693841-bd26b574910a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"  alt="" data-bgposition="center center" data-bgfit="cover">	
+        <img src="https://images.unsplash.com/photo-1594537902957-39005e14a21d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"  alt="" data-bgposition="center center" data-bgfit="cover">	
         <h1 class="tp-caption tp-resizeme uppercase text-center" 														
         data-x="['center','center','center','center']" data-hoffset="['0','15','15','15']" 
         data-y="['300','200','180','130']" data-voffset="['0','0','0','0']"
@@ -102,8 +102,8 @@ $title = 'Home';
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 right top40">
         <p class="bottom20">Established in 2015, ForexAssets is a trusted authority on digital asset investment
-          ForexAssets Assets is run by traders and investment professionals combining decades of investment experience gained in major Wall Street banks, including Bankers Trust, Goldman Sachs, JPMorgan, Morgan Stankey, BofA Merrill Lynch, UBS, and Rothschild, as well as global hedge funds.</p>
-        <h4 class="bottom10">ForexAssets Assets</h4>
+          ForexAssets is run by traders and investment professionals combining decades of investment experience gained in major Wall Street banks, including Bankers Trust, Goldman Sachs, JPMorgan, Morgan Stankey, BofA Merrill Lynch, UBS, and Rothschild, as well as global hedge funds.</p>
+        <h4 class="bottom10">ForexAssets</h4>
         <span class="bottom20" style="margin-bottom: 40px !important;">An investment firm that offers a range of digital asset strategy solutions to institutional investors.</span><br>
         <p class="bottom20">This experience is further complemented by the managers' academic backgrounds in mathematics, econometrics and computer engineering with degrees from Wharton, LSE, and the University of Oxford.</p>
         <a href="<?php echo BASE_URL . '/signin'; ?>" class="text-uppercase border_radius btn-green">read more</a>
@@ -312,10 +312,10 @@ $title = 'Home';
       <div class="col-sm-6 video wow fadeInLeft"  data-wow-delay="500ms">
         <img src="https://fortescueinvestment.com/ui/images/video-img.jpg" alt="video">
        <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=8ac832&amp;wmode=opaque" 
-      class="html5lightbox video-btn" data-width="900" data-height="420" title="ForexAssets Assets in partnership with.. "><i class="icon-play2"></i></a> 
+      class="html5lightbox video-btn" data-width="900" data-height="420" title="ForexAssets in partnership with.. "><i class="icon-play2"></i></a> 
       </div>
       <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight"  data-wow-delay="500ms">
-        <h2 class="bottom30 text-capitalize">About  <span class="green_t">ForexAssets Assets</span></h2>
+        <h2 class="bottom30 text-capitalize">About  <span class="green_t">ForexAssets</span></h2>
         <p class="bottom30">ForexAssets Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products.</p>
         <p class="bottom30"> All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
         <a href="<?php echo BASE_URL . '/signin'; ?>" class="btn-white text-uppercase border_radius">get started</a>

@@ -10,8 +10,7 @@
                         <?php else:?>
                             <a class="navbar-brand" href="<?php echo BASE_URL . '/dashboard/user/'; ?>">
                         <?php endif; ?>
-                            <img class="brand-logo" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/dashboard/'?>images/logo/logo.png">
-                            <h3 class="brand-text">Rocktera Assets</h3>
+                            <img class="brand-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/open/';?>images/logo-dark.png">
                         </a>
                     </li>
                     <li class="nav-item d-md-none">
@@ -26,7 +25,7 @@
                         <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
                         <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
                             <div class="search-input">
-                                <input class="input" type="text" placeholder="Explore Rocktera...">
+                                <input class="input" type="text" placeholder="Explore Forex-Assets...">
                             </div>
                         </li>
                     </ul>

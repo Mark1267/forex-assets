@@ -63,7 +63,7 @@ $title = 'Contact Us';
                 <span><i class="icon-mail"></i></span>
                 <div class="text">
                   <h4>Email Address</h4>
-                  <p><a href="#.">info@rocktera-assets.com</a></p>
+                  <p><a href="#.">info@forex-assets.com</a></p>
                 </div>
                </div>
               </div>

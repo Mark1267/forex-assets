@@ -1,11 +1,11 @@
 <head>
-    <title><?php echo $title;?> | RockTera-Assets</title>
+    <title><?php echo $title;?> | Forex-Assets</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="description" content="">
     <meta name="keywords" content="invest investments assets plan portfolio dollars online money quick cryptocurrency currency bitcoin ethereum">
-    <meta name="author" content="ROCKTERAASSETS">
+    <meta name="author" content="FOREXASSETS">
     <title><?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1){echo 'Admin';} ?><?php echo $title; ?> | RockTera</title>
     <link rel="apple-touch-icon" href="<?php echo BASE_URL . '/assets/dashboard/'?>images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL . '/assets/dashboard/'?>images/ico/favicon.png">

@@ -14,62 +14,61 @@ function mailing($template_file, $swap_var){
     
         // allow for demo mode testing of emails
         define("DEMO", FALSE);
-try{
+        try{
 
-        // load the email to and subject from the $swap_var
-        $email_to = $swap_var['{TO_EMAIL}'];
-        $email_subject = $swap_var['{EMAIL_TITLE}']; // you can add time() to get unique subjects for testing: time();
+            // load the email to and subject from the $swap_var
+            $email_to = $swap_var['{TO_EMAIL}'];
+            $email_subject = $swap_var['{EMAIL_TITLE}']; // you can add time() to get unique subjects for testing: time();
 
-        // load in the template file for processing (after we make sure it exists)
-        if (file_exists($template_file)) {
-            $email_message = file_get_contents($template_file);
-        } else {
-            die("Unable to locate your template file");
-        }
-
-        // search and replace for predefined variables, like SITE_ADDR, {NAME}, {lOGO}, {CUSTOM_URL} etc
-        foreach (array_keys($swap_var) as $key) {
-            if (strlen($key) > 2 && trim($swap_var[$key]) != '') {
-                $email_message = str_replace($key, $swap_var[$key], $email_message);
+            // load in the template file for processing (after we make sure it exists)
+            if (file_exists($template_file)) {
+                $email_message = file_get_contents($template_file);
+            } else {
+                die("Unable to locate your template file");
             }
-        }
 
-        // check if the email script is in demo mode, if it is then dont actually send an email
-        if (DEMO) {
-        // display the email template back to the user for final approval
-        echo $email_message;
-            die("<hr /><center>This is a demo of the HTML email to be sent. No email was sent. </center>");
-        }
+            // search and replace for predefined variables, like SITE_ADDR, {NAME}, {lOGO}, {CUSTOM_URL} etc
+            foreach (array_keys($swap_var) as $key) {
+                if (strlen($key) > 2 && trim($swap_var[$key]) != '') {
+                    $email_message = str_replace($key, $swap_var[$key], $email_message);
+                }
+            }
 
-        //Server settings
-        $mail->SMTPDebug = 0;                      // Enable verbose debug output
-        $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'smtp.hostinger.com';                    // Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'support@rocktera-assets.com';                     // SMTP username
-        $mail->Password   = 'Stafen1234';                               // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption PHPMailer::ENCRYPTION_SMTPS; `` encouraged
-        $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_STARTTLS` above
-    
-        //Recipients
-        $mail->setFrom('support@rocktera-assets.com', 'RockTera Assets');
-        $mail->addAddress($email_to, $swap_var['#name#'] . ' ' . $swap_var['#name2#']);
-        if ($swap_var['{EMAIL_TITLE}'] === 'Deposit Request' || $swap_var['{EMAIL_TITLE}'] === 'Withdrawal Request') {
-            $mail->addCC('info@rocktera-assets.com');
-        }
-    
-    
-        // Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = $email_subject;
-        $mail->Body    = $email_message;
-        
+            // check if the email script is in demo mode, if it is then dont actually send an email
+            if (DEMO) {
+            // display the email template back to the user for final approval
+            echo $email_message;
+                die("<hr /><center>This is a demo of the HTML email to be sent. No email was sent. </center>");
+            }
+
+            //Server settings
+            $mail->SMTPDebug = 0;                      // Enable verbose debug output
+            $mail->isSMTP();                                            // Send using SMTP
+            $mail->Host       = 'smtp.hostinger.com';                    // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+            $mail->Username   = 'support@forex-assets.exchange';                     // SMTP username
+            $mail->Password   = 'David032021';                               // SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption PHPMailer::ENCRYPTION_SMTPS; `` encouraged
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_STARTTLS` above
+            
+            //Recipients
+            $mail->setFrom('support@forex-assets.exchange', 'Forex Assets');
+            $mail->addAddress($email_to, $swap_var['#name#'] . ' ' . $swap_var['#name2#']);
+            if ($swap_var['{EMAIL_TITLE}'] === 'Deposit Request' || $swap_var['{EMAIL_TITLE}'] === 'Withdrawal Request') {
+                $mail->addCC('info@forex-assets.exchange');
+            }
+            
+            
+            // Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = $email_subject;
+            $mail->Body    = $email_message;
             $mail->send();
-  
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    $mail->getSMTPInstance()->reset();
-}
+        
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $mail->getSMTPInstance()->reset();
+        }
     $mail->clearAddresses();
     $mail->clearAttachments();
 }

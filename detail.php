@@ -48,8 +48,8 @@ $title = 'Our Services';
           <li rel="tab2">Diversified Products</li>
         </ul>
         <div class="testinomial_wrap heading_space">
-          <div class="testinomial_text" style="text-align: center;"> <img width="58px" style="height: 59px;" alt="testinomial" src="<?php echo BASE_URL . '/assets/dashboard/images/ico/apple-icon-120.png'; ?>" class="quote">
-            <p>With ROCKTERA, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
+          <div class="testinomial_text" style="text-align: center;"> <img style="width: 188px;" alt="testinomial" src="<?php echo BASE_URL . '/assets/open/images/logo-dark.png'; ?>" class="quote">
+            <p>With ForexAssets, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
           </div>
           <div class="testinomial_pic"> <img width="58px" alt="testinomial" src="<?php echo BASE_URL . '/assets/dashboard/images/user/avatar-s-19.png'; ?>" class=""> <span class="color">Bard Markson</span> <span class="post_img">Client</span> </div>
         </div>
@@ -72,17 +72,17 @@ $title = 'Our Services';
                 </div>
               </div>
               <h3 class="bottom20">Single-Asset Products</h3>
-              <p class="bottom30"> ForexAssetsBitcoin Trust.  Rocktera's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin. It enables investors to gain exposure to the price movement of bitcoin without the challenges of buying, storing, and safekeeping bitcoins.</p>
+              <p class="bottom30"> ForexAssets Bitcoin Trust.  ForexAssets's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin. It enables investors to gain exposure to the price movement of bitcoin without the challenges of buying, storing, and safekeeping bitcoins.</p>
 
-<p class="bottom40">• ForexAssetsBitcoin Cash Trust. An alternative approach for electronic cash.</p>
+<p class="bottom40">• ForexAssets Bitcoin Cash Trust. An alternative approach for electronic cash.</p>
 
-<p class="bottom40">• ForexAssetsEthereum Trust. A decentralized, smart-contract platform.</p>
+<p class="bottom40">• ForexAssets Ethereum Trust. A decentralized, smart-contract platform.</p>
 
-<p class="bottom40">• ForexAssetsEthereum Classic Trust. A flexible currency for the Internet of Things.</p>
+<p class="bottom40">• ForexAssets Ethereum Classic Trust. A flexible currency for the Internet of Things.</p>
 
-<p class="bottom40">• ForexAssetsLitecoin Trust. A digital currency for fast, low-cost payments.</p>
+<p class="bottom40">• ForexAssets Litecoin Trust. A digital currency for fast, low-cost payments.</p>
 
-<p class="bottom40">• ForexAssetsStellar Lumens Trust. A platform that connects banks, payment systems, and people.
+<p class="bottom40">• ForexAssets Stellar Lumens Trust. A platform that connects banks, payment systems, and people.
 </p>
               <div class="row">
                 <div class="col-md-5">
@@ -173,7 +173,7 @@ We will remain a privately owned, independent firm to ensure that we act in the 
                 </div>
               </div>
               <h3 class="bottom20">Diversified Products</h3>
-              <p class="bottom30">• ForexAssetsDigital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
+              <p class="bottom30">• ForexAssets Digital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
               <div class="row">
                 <div class="col-md-5">
                   <h2 class="bottom10">Key<span class="blue_t">Benefits</span></h2>

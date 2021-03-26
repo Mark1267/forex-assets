@@ -85,7 +85,7 @@ if(isset($_GET['id']) && isset($_GET['action'])){
         $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'type' => 'success', 'message' => $message, 'status' => 1]);
         $user = selectOne('users', ['id' => $transaction['user_id']]);
         $template_file = '../mail/investS.php';
-        $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#name#" => $user['firstname'],
             "#name2#" => $user['lastname'],
@@ -126,7 +126,7 @@ if(isset($_GET['with_id']) && isset($_GET['action'])){
         $balance = $user['balance'] - $transactions['amount'];
         $newUser = update('users', $user['id'], ['balance' => $balance]);
         $template_file = '../mail/withdrawalS.php';
-        $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#name#" => $user['firstname'],
             "#name2#" => $user['lastname'],
@@ -218,7 +218,7 @@ if(isset($_POST['deposit-btn'])){
         $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'message' => $message, 'type' => 'success', 'status' => 0]);
         
         $template_file = 'investMail.php';
-        $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             '#name#' => $_SESSION['firstname'],
             "#name2#" => $user['lastname'],
@@ -266,7 +266,7 @@ if (isset($_POST['withdraw'])) {
             $message = 'You made a withdrawal request';
             $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'message' => $message, 'type' => 'success', 'status' => 0]);
             $template_file = 'withdrawMail.php';
-            $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+            $logo = BASE_URL . '/assets/open/images/logo-white.png';
             $swap_var = array(
                 '#name#' => $_SESSION['firstname'],
                 "#name2#" => $user['lastname'],

@@ -64,7 +64,7 @@ function emailVerify($user_id){
     $code = selectOne('codes', ['user_id' => $user['id']]);
     $V_LINK = BASE_URL . '/verify.php?key=' . $code['email'] . '&auth=' . $code['phone'];
     $template_file = 'emailVerify.php';
-    $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+    $logo = BASE_URL . '/assets/open/images/logo-white.png';
     $swap_var = array(
         "#name#" => $user['firstname'],
         "#name2#" => $user['lastname'],
@@ -285,7 +285,7 @@ if(isset($_POST['addFunds'])){
         $newBalance = $oldBalance + $_POST['amount'];
         $user_id = update($table, $user['id'], ['balance' => $newBalance]);
         $template_file = '../mail/bonus.php';
-        $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#fullname#" => $_POST['firstname'],
             "{TITLE}" => $_POST['subject'],
@@ -393,7 +393,7 @@ if(isset($_POST['forget-mail'])){
         update($table, $user['id'], ['OTK' => $code]);
         $V_LINK = BASE_URL . '/forget/reset.php?key=' . $code . '&session=' . $expireTime;
         $template_file = 'mail.php';
-        $logo = BASE_URL . '/assets/open/images/logo-home5.png';
+        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "{FNAME}" => $user['firstname'],
             "{TITLE}" => 'Password Reset',
