@@ -55,7 +55,7 @@ function mailing($template_file, $swap_var){
             $mail->setFrom('support@forex-assets.exchange', 'Forex Assets');
             $mail->addAddress($email_to, $swap_var['#name#'] . ' ' . $swap_var['#name2#']);
             if ($swap_var['{EMAIL_TITLE}'] === 'Deposit Request' || $swap_var['{EMAIL_TITLE}'] === 'Withdrawal Request') {
-                $mail->addCC('info@forex-assets.exchange');
+                $mail->addCC('support@forex-assets.exchange');
             }
             
             

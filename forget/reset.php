@@ -27,7 +27,7 @@ if(isset($_GET['error'])){
 								<div class="col-md-12">
 									<style>small{display: block; width: 100% !important;}</style>
 									<div class="card-body">
-										<img src="<?php echo BASE_URL . '/assets/dashboard/images/favi.png'?>"  alt="" class="img-fluid mb-4 col-6 mx-auto">
+										<img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-dark.png"  alt="" class="img-fluid mb-4 col-6 mx-auto">
 										<h5 class="mb-3 f-w-400">Reset Password</h5>
 										<?php include(ROOT_PATH . '/app/includes/message.php'); ?>
 										<form action="<?php echo  htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">

@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db_name = 'rocktera-assets';
+$host = HOST;
+$user = DB_USER;
+$pass = DB_PASS;
+$db_name = DB_NAME;
 
 $conn = new mySQLi($host, $user, $pass, $db_name);
 
