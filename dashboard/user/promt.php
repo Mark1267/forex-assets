@@ -27,8 +27,8 @@ $title = 'Deposit';
                                 <div class="card text-center">
                                     <div class="card-body">
                                         <h5 class="card-title">Deposit Request</h5>
-                                        <p class="card-text" style="line-height: 30px;">Deposit exactly  <code><?php echo $dAmount; ?></code>  <?php echo $account['currency']; ?> to the wallet address <code class="active bg-light">1CgSncckvWpbVemZt16b4nLiRC4Hn7wJMU</code></p>
-                                        <div class="btn i-block btn-primary" data-clipboard-text="1CgSncckvWpbVemZt16b4nLiRC4Hn7wJMU" data-filter="copy" data-toggle="tooltip" data-orignal-title="copy"><i data-feather="copy"></i>&nbsp;Copy Wallet</div>
+                                        <p class="card-text" style="line-height: 30px;">Deposit exactly  <code><?php echo $dAmount; ?></code>  <?php echo $account['currency']; ?> to the wallet address <code class="active bg-light"><?php echo $account['address']; ?></code></p>
+                                        <div class="btn i-block btn-primary" data-clipboard-text="<?php echo $account['address']; ?>" data-filter="copy" data-toggle="tooltip" data-orignal-title="copy"><i data-feather="copy"></i>&nbsp;Copy Wallet</div>
                                     </div>
                                 </div>
                             </div>
