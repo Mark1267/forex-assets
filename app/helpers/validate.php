@@ -37,6 +37,14 @@ function userVal($user){
         }
     
         #email
+        if (empty($user['username'])) {
+            array_push($error, 'Username Required');
+            $errors['unr'] = 'Username Required';
+        }else{
+            $errors['unr'] = '';
+        }
+
+        #email
         if (empty($user['email'])) {
             array_push($error, 'Email Required');
             $errors['eme'] = 'Email Required';
@@ -51,7 +59,6 @@ function userVal($user){
         }
     
         #phone
-        if (isset($user['signup'])) {
             if (empty($user['phone'])) {
                 array_push($error, 'Phone Number Required');
                 $errors['ph'] = 'Phone Number Required';
@@ -60,9 +67,9 @@ function userVal($user){
             }
             if (!empty($user['phone']) && !preg_match($regexephone, $user['phone'])) {
                 array_push($error, 'Phone:Invalid characters');
-                $errors['ph'] = 'Phone:Invalid characters';
+                $errors['phi'] = 'Phone:Invalid characters';
             } else {
-                $errors['ph'] = '';
+                $errors['phi'] = '';
             }
 
             $existingPhone = selectOne('users', ['phone' => $user['phone']]);
@@ -72,7 +79,6 @@ function userVal($user){
             }else{
                 $errors['exph']= '';
             }
-        }
 
         #password
         if (empty($user['password'])) {
@@ -122,10 +128,12 @@ function userVal($user){
             $existingUsername = selectOne('users', ['username' => $user['username']]);
             if ($existingUsername) {
                 array_push($error, 'Username Already Exists');
-                $errors['unr'] = 'Username Already Exists';
+                $errors['eun'] = 'Username Already Exists';
             } else {
-                $errors['unr']= '';
+                $errors['eun']= '';
             }
+        }else {
+            $errors['eun']= '';
         }
 
         $genErrors = array($errors, $error);

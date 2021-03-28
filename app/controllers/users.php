@@ -15,7 +15,7 @@ $errors['unr'] = $errors['pr'] = $errors['pri'] = $errors['psl'] = '';
 $errors['cps'] = $errors['cpse'] = $errors['exe'] = $errors['et'] = '';
 $errors['efi'] = $errors['eli'] = $errors['em'] = $errors['emm'] = '';
 $errors['img'] = $errors['euimg'] = $errors['ph'] = $errors['exph'] = '';
-$errors['phone'] = '';
+$errors['phone'] = $errors['eun'] = $errors['phi'] = '';
 
 $table = 'users';
 
@@ -119,6 +119,7 @@ if (isset($_POST['signup']) || isset($_POST['adminAdd'])) {
         $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $_POST['image'] = 'avatar-s-19.png';
         if(isset($_POST['adminAdd'])){
+            adminOnly();
             unset($_POST['adminAdd']);
             $_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
             $_POST['emailVerified']  = 1;

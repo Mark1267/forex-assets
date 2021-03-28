@@ -70,6 +70,7 @@ $title = 'Dashboard';
                                                 name="username" value="<?php echo $username; ?>">
                                                 </div>                                                
                                                 <small class="badge badge-default badge-info"><?php echo $errors['unr']; ?></small>
+                                                <small class="badge badge-default badge-info"><?php echo $errors['eun']; ?></small>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -111,7 +112,7 @@ $title = 'Dashboard';
                                             <label for="phone">Phone Number</label>
                                             <input class="form-control border-primary" name="phone" id="phone" type="tel" placeholder="Phone Number" value="<?php echo $phone; ?>">
                                             <small class="badge badge-default badge-info"><?php echo $errors['ph']; ?></small>
-                                            <small class="badge badge-default badge-info"><?php echo $errors['phone']; ?></small>
+                                            <small class="badge badge-default badge-info"><?php echo $errors['phi']; ?></small>
                                             <small class="badge badge-default badge-info"><?php echo $errors['exph']; ?></small>
                                         </div>
                                         <fieldset class="radio">

@@ -66,6 +66,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                           <i class="ft-user"></i>
                         </div>
                         <div class="help-block font-small-3"></div>
+                        <small class="text-danger"><?php echo $errors['eun']; ?></small>
                         <small class="text-danger"><?php echo $errors['unr']; ?></small>
                       </fieldset>
                       <fieldset class="form-group position-relative has-icon-left">
@@ -88,6 +89,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <div class="help-block font-small-3"></div>
                         <small class="text-danger"><?php echo $errors['exph']; ?></small>
                         <small class="text-danger"><?php echo $errors['ph']; ?></small>
+                        <small class="text-danger"><?php echo $errors['phi']; ?></small>
                       </fieldset>
                       <div class="row">
                         <div class="col-12 col-md-6">
