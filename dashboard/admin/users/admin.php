@@ -61,7 +61,7 @@ $title = 'Dashboard';
                                                         <td><?php echo $user['email']; ?></td>
                                                         <td><?php echo $user['phone']; ?></td>
                                                         <td><a href="<?php echo BASE_URL . '/dashboard/admin/users/view.php?id=' . $user['id']; ?>" class="btn btn-sm btn-outline-warning">View</a></td>
-                                                        <td><a href="<?php echo BASE_URL . '/dashboard/admin/users/contact.php?id=' . $user['id']; ?>" class="btn btn-sm btn-outline-info">Contact</a></td>
+                                                        <td><a href="<?php echo BASE_URL . '/dashboard/admin/users/contact.php?u_id=' . $user['id']; ?>" class="btn btn-sm btn-outline-info">Contact</a></td>
                                                         <td><a href="<?php echo BASE_URL . '/dashboard/admin/users/del.php?id=' . $user['id']; ?>" class="btn btn-sm btn-outline-danger">Delete</a></td>
                                                         <td><?php echo date('F j, Y', strtotime($user['created_at'])); ?></td>
                                                     </tr>
