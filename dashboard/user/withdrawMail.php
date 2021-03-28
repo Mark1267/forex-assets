@@ -27,7 +27,7 @@
                 <div style="text-align: center; width: 100%;">
                     <a href="https://forex-assets.exchange/signin" style="margin: 15px auto; display: inline-block; text-align: center; padding: 9px 20px; border-radius: 4px; color: white; background-color: #ffcc29; text-decoration: none;">Dashboard</a>
                 </div> 
-                <center style=""><span style="margin-top: 30px;">Invoice Details</span></center>
+                <center><span style="margin-top: 30px;">Invoice Details</span></center>
                 <table cellspacing="3" style="width: 100%; text-align: left; border: 2px dashed #373435; color: #ffff;">
                 <tr style="padding: 10px; background-color:  #c7c1c3;">
                     <th style="padding: 10px; background-color: #373435; color: #ffff; width: 40%;">Client Name</th>
