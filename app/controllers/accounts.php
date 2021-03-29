@@ -129,14 +129,13 @@ if(isset($_GET['with_id']) && isset($_GET['action'])){
         $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#name#" => $user['firstname'],
-            "#name2#" => $user['lastname'],
             "#fullname#" => $user['firstname'] . ' ' . $user['lastname'],
-            "{EMAIL_TITLE}" => 'Deposit Request', 
+            "{EMAIL_TITLE}" => 'Withdrawal Successful', 
             "{TO_EMAIL}" => $user['email'], 
             "#wallet#" => $transaction['receiver_address'],
             "#amount#" => $transaction['amount'], 
             "#currency#" => $account['name'],
-            "#remarks#" => $account['name'] . ' Deposit Method',
+            "#remarks#" => $account['name'] . ' Withdrawal Method',
             "#logo#" => $logo, 
             "#trans_id#" => $transaction['trans_id'],
             '#datetime#' => date('Y-m-d : h:i:s a')
@@ -144,7 +143,17 @@ if(isset($_GET['with_id']) && isset($_GET['action'])){
         mailing($template_file, $swap_var);
         $_SESSION['message'] = 'Withdrawal Accepted';
         $_SESSION['type'] = 'success';
-        header('location:' . BASE_URL . '/dashboard/admin/withdrawal.php');
+        header('location:' . BASE_URL . '/dashboard/admin/transactions/withdrawals.php');
+    }else{
+        $fund = update($table2, $_GET['with_id'], ['status' => 0]); #change deposit status to false
+        $transaction = selectOne($table2, ['id' => $_GET['with_id']]); #select the new updated deposit
+        $user = selectOne('users', ['id' => $transactions['user_id']]);
+        $balance = $user['balance'] + $transactions['amount'];
+        $newUser = update('users', $user['id'], ['balance' => $balance]);
+        $message = 'Admin ' . $_SESSION['firstname'] . ' reversed a withdrawal';
+        $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'type' => 'primary', 'message' => $message, 'status' => 1]);
+        $_SESSION['message'] = 'Withdrwal Reversed Successfully';
+        $_SESSION['type'] = 'primary';
     }
 }
 
