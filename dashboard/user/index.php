@@ -288,7 +288,7 @@ $title = 'Dashboard';
                                                     <td><?php echo $plan['dailyPercent']; ?>%</td>
                                                     <td>$<?php echo $transaction['amount']; ?></td>
                                                     <td>$<?php echo $earing; ?></td>
-                                                    <td><?php echo abs($currentTime - $plan['ROI']) ; ?></td>
+                                                    <td><?php echo round(abs($currentTime - $plan['ROI']), 1) ; ?></td>
                                                     <?php if(strtotime($fund['end']) > strtotime(date('Y-m-d'))):?>
                                                         <td><a href="#!" class="btn btn-sm round btn-outline-info disabled">Ongoing</a></td>                                     
                                                         <?php else:?>                                         
