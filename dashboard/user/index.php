@@ -273,17 +273,17 @@ $title = 'Dashboard';
                                             $time1 = strtotime($fund['end']) - strtotime(date('Y-m-d'));
                                             $currentTime = ceil($time1 / 86400);
                                             $timeT = strtotime($fund['end']) - strtotime(date('Y-m-d h:i:s'));
-                                            //$currentTime = $plan['ROI'] - $currentTime;
+                                            $currentTime = $plan['ROI'] - $currentTime;
                                             $earing = round(earnings($transaction['amount'], $plan['dailyPercent'], abs($currentTime)), 2);
                                             if($currentTime <= 0){
                                                 $currentTime = 0;
                                                 $earing = $plan['dailyPercent'] / 100; 
                                                 $earing *=  $transaction['amount'];
-                                                $earing *= $plan['ROI'];
+                                                $earing *= $plan['ROI'];/* Hello HI */
                                             }
                                             ?>
                                                 <tr>
-                                                    <td><?php echo date('F j, Y', strtotime($transaction['created_at'])); ?></td>
+                                                    <td><?php echo date('F j, Y h:i:s', strtotime($transaction['created_at'])); ?></td>
                                                     <td class="success"><?php echo $plan['name']; ?></td>
                                                     <td><?php echo $plan['dailyPercent']; ?>%</td>
                                                     <td>$<?php echo $transaction['amount']; ?></td>

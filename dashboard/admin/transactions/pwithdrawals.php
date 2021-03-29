@@ -60,8 +60,8 @@ $title = 'Pending Withdrawals';
                                                             <td>$<?php echo $transaction['amount']; ?></td>
                                                             <td><?php echo $transaction['receiver_address']; ?></td>
                                                             <td><?php echo date('F j, Y h:i:s a', strtotime($transaction['created_at'])); ?></td>
-                                                            <td><a href="<?php echo BASE_URL . '/dashboard/admin/transactions/pinvest.php?id=' . $transaction['id'] . '&action=accept'; ?>" class="btn btn-sm btn-outline-success round">Accept</a></td>
-                                                            <td><a href="<?php echo BASE_URL . '/dashboard/admin/transactions/pinvest.php?del_id=' . $transaction['id']; ?>" class="btn btn-sm btn-outline-danger round">Delete</a></td>
+                                                            <td><a href="<?php echo BASE_URL . '/dashboard/admin/transactions/pwithdrawals.php?with_id=' . $transaction['id'] . '&action=accept'; ?>" class="btn btn-sm btn-outline-success round">Accept</a></td>
+                                                            <td><a href="<?php echo BASE_URL . '/dashboard/admin/transactions/pwithdrawals.php?del_id=' . $transaction['id']; ?>" class="btn btn-sm btn-outline-danger round">Delete</a></td>
                                                         </tr>
                                                     <?php endforeach; ?>
                                                 </tbody>
