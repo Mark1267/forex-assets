@@ -82,7 +82,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                       </fieldset>
                       <fieldset class="form-group position-relative has-icon-left">
                         <input type="tel" name="phone" id="phone" class="form-control input-lg" placeholder="Phone Number"
-                        tabindex="4" required data-validation-required-message="Please enter phone number." value="<?php echo $phone; ?>">
+                        tabindex="5" required data-validation-required-message="Please enter phone number." value="<?php echo $phone; ?>">
                         <div class="form-control-position">
                           <i class="ft-phone"></i>
                         </div>
@@ -95,7 +95,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <div class="col-12 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
                             <input type="password" name="password" id="password" class="form-control input-lg"
-                            placeholder="Password" tabindex="5" required value="<?php echo $password; ?>">
+                            placeholder="Password" tabindex="6" required value="<?php echo $password; ?>">
                             <div class="form-control-position">
                               <i class="la la-key"></i>
                             </div>
@@ -105,7 +105,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <div class="col-12 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
                             <input type="password" name="cpassword" id="cpassword" class="form-control input-lg"
-                            placeholder="Confirm Password" tabindex="6" data-validation-matches-match="password"
+                            placeholder="Confirm Password" tabindex="7" data-validation-matches-match="password"
                             data-validation-matches-message="Password & Confirm Password must be the same." value="<?php echo $cpassword; ?>">
                             <div class="form-control-position">
                               <i class="la la-key"></i>
