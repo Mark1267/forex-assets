@@ -1,5 +1,5 @@
 <?php 
-header('location: https://rocktera-assets.com');
+header('location: https://rocktera-assets.exchange');
 exit();
 
 ?>

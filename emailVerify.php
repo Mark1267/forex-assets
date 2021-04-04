@@ -6,7 +6,7 @@
     <div style="background-color:white; max-width: 600px; margin: 0px auto; position: relative;">
         <div style="padding: 10px; background: #373435; min-height: 60px;">
             <div style="margin: 0px auto; width: 66.66%;">
-                <img src="#logo#" alt="Forexassets_logo" class="img-fluid" style="width: 100px; vertical-align: middle;">
+                <img src="#logo#" alt="Forex-Assets_logo" class="img-fluid" style="width: 100px; vertical-align: middle;">
             </div>
         </div>
         <div style="position: relative; padding: 25px;">

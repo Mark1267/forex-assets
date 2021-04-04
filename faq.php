@@ -54,7 +54,7 @@ $title = 'FAQ';
                  What is this website about? Is this an ICO?<i class="fa fa-minus"></i>
               </a>
               <div class="content" style="display:block;">
-                  <p class="bottom20">No. This is not an Initial Coin Offering. We believe that ICO's should be approached with caution as the majority of "Alt coins" do not offer any benefits to more established crypto currencies such as Bitcoin, Ethereum, etc. ForexAssets is a managed cryptocurrency trading platform with user friendly interface and attractive offer.</p>
+                  <p class="bottom20">No. This is not an Initial Coin Offering. We believe that ICO's should be approached with caution as the majority of "Alt coins" do not offer any benefits to more established crypto currencies such as Bitcoin, Ethereum, etc. Forex-Assets is a managed cryptocurrency trading platform with user friendly interface and attractive offer.</p>
               </div>
             </div>
             <div class="accordion_title">
@@ -72,7 +72,7 @@ $title = 'FAQ';
             <div class="accordion_title">
               <a href="javascript:void(0)">How can I access the account?<i class="fa fa-plus"></i></a>
               <div class="content">
-                <p class="bottom20">If you are a registered user of ForexAssets, please enter your username and password in the appropriate fields at the top of the website and click the "Login to Account" button. You will be redirected to your account automatically as soon as you have done the above.</p>
+                <p class="bottom20">If you are a registered user of Forex-Assets, please enter your username and password in the appropriate fields at the top of the website and click the "Login to Account" button. You will be redirected to your account automatically as soon as you have done the above.</p>
               </div>
             </div>
             <div class="accordion_title">
@@ -84,7 +84,7 @@ $title = 'FAQ';
             <div class="accordion_title">
               <a href="javascript:void(0)">What is the process of investing?<i class="fa fa-plus"></i></a>
               <div class="content">
-                <p class="bottom20">To make investments you should register with ForexAssets, create an account and then you can make your deposit. All the investments are made in your personal account after login</p>
+                <p class="bottom20">To make investments you should register with Forex-Assets, create an account and then you can make your deposit. All the investments are made in your personal account after login</p>
               </div>
             </div>
           </div>

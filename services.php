@@ -51,7 +51,7 @@ $title = 'Our Services';
             </div>
           </div>
           <h3 class="bottom10">Single-Asset Products</h3>
-          <p class="bottom15">ForexAssets Bitcoin Trust.  ForexAssets's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin...</p>
+          <p class="bottom15">Forex-Assets Bitcoin Trust.  Forex-Assets's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin...</p>
           <a href="<?php echo BASE_URL . '/detail'; ?>" class="btn-border border_radius text-uppercase">Learn More</a>
         </div>
       </div>
@@ -64,7 +64,7 @@ $title = 'Our Services';
             </div>
           </div>
           <h3 class="bottom10">Diversified Products</h3>
-          <p class="bottom15">ForexAssets Digital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
+          <p class="bottom15">Forex-Assets Digital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
           <a href="<?php echo BASE_URL . '/detail'; ?>" class="btn-border border_radius text-uppercase">Learn More</a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <?php 
-header('location: https://forex-assets.co.uk');
+header('location: https://forex-assets.exchange');
 exit();
 
 ?>

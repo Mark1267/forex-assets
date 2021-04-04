@@ -62,7 +62,7 @@ if(isset($_GET['invest_id'])){
         header('location:' . BASE_URL . '/dashboard/user/');
         exit();
     }else{
-        $_SESSION['message'] = 'Re-Invested Failed: Insuficent Balance';
+        $_SESSION['message'] = 'Re-Invested Failed: Insufficient Balance';
         $_SESSION['type'] = 'danger';
         header('location:' . BASE_URL . '/dashboard/user/');
         exit();

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="">
     <meta name="keywords" content="invest investments forex-assets assets plan portfolio dollars online money quick cryptocurrency currency bitcoin ethereum">
-    <meta name="author" content="FOREXASSETS">
+    <meta name="author" content="Forex-Assets/thomasjacobs2021@protonmail.com">
     <title><?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1){echo 'Admin';} ?><?php echo $title; ?> | Forex Assets</title>
     <link rel="apple-touch-icon" href="<?php echo BASE_URL . '/assets/open/'?>images/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL . '/assets/open/'?>images/favicon.png">

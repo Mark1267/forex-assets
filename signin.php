@@ -54,7 +54,7 @@ $title = 'Sign In';
                                         </form>
                                     </div>
                                     <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2 my-1">
-                                        <span>New to ForexAssets?</span>
+                                        <span>New to Forex-Assets?</span>
                                     </p>
                                     <div class="card-body">
                                         <a href="<?php echo BASE_URL . '/signup'; ?>" class="btn btn-outline-danger btn-block"><i class="ft-user"></i> Register</a>
