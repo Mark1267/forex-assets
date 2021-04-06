@@ -35,7 +35,6 @@ $title = 'Withdrawals';
                                             <tr class="bg-primary bg-lighten-2 text-white">
                                                 <th>S/N</th>
                                                 <th>Trans. ID</th>
-                                                <th>Plan</th>
                                                 <th>Amount</th>
                                                 <th>Wallet ID</th>
                                                 <th>Status</th>
@@ -44,11 +43,9 @@ $title = 'Withdrawals';
                                         </thead>
                                                 <tbody>
                                                     <?php foreach($transactions as $key => $transaction):?>
-                                                        <?php $plan = selectOne('plans', ['id' => $transaction['plan_id']]);?>
-                                                    <tr>
+                                                       <tr>
                                                         <td><?php echo $key + 1; ?></td>
                                                         <td><?php echo $transaction['trans_id']; ?></td>
-                                                        <td><?php echo $plan['title']; ?></td>
                                                         <td>$<?php echo $transaction['amount']; ?></td>
                                                         <td><?php echo $transaction['receiver_address']; ?></td>
                                                         <?php if($transaction['status'] == 1):?>

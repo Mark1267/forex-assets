@@ -48,7 +48,7 @@ $title = 'Investments';
                                                     <tr>
                                                         <td><?php echo $key + 1; ?></td>
                                                         <td><?php echo $transaction['trans_id']; ?></td>
-                                                        <td><?php echo $plan['title']; ?></td>
+                                                        <td><?php echo $plan['name']; ?></td>
                                                         <td>$<?php echo $transaction['amount']; ?></td>
                                                         <td><?php echo $transaction['receiver_address']; ?></td>
                                                         <?php if($transaction['status'] == 1):?>
