@@ -35,7 +35,7 @@ $title = 'Deposit';
                         <?php endif; ?>
                     </div>
                 </div>
-            <!-- [ Main Content ] end -->
+            <!-- [ Main Content ] end. -->
         </div>
     </div>
     <!-- Required Js -->
