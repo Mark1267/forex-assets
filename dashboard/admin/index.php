@@ -166,13 +166,13 @@ $title = 'Dashboard';
                                                     <td class="text-truncate">
                                                         <?php if($transaction['status'] == 1):?>
                                                             <?php if($transaction['nature'] == 1):?>
-                                                                <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/invest.php?id=' . $deposit['id'] . '&action=reverse'; ?>" class="btn btn-sm btn-outline-warning round">Reverse</a>
+                                                                <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/invest.php?id=' . $transaction['id'] . '&action=reverse'; ?>" class="btn btn-sm btn-outline-warning round">Reverse</a>
                                                             <?php else: ?>
                                                                 <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/withdrawals.php?with_id=' . $transaction['id'] . '&action=reverse'; ?>" class="btn btn-sm btn-outline-warning round">Reverse</a>
                                                             <?php endif;?>
                                                         <?php else: ?>
                                                             <?php if($transaction['nature'] == 1):?>
-                                                                <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/invest.php?id=' . $deposit['id'] . '&action=accept'; ?>" class="btn btn-sm btn-outline-success round">Accept</a>
+                                                                <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/invest.php?id=' . $transaction['id'] . '&action=accept'; ?>" class="btn btn-sm btn-outline-success round">Accept</a>
                                                             <?php else: ?>
                                                                 <a href="<?php echo BASE_URL . '/dashboard/admin/transactions/pwithdrawals.php?with_id=' . $transaction['id'] . '&action=accept'; ?>" class="btn btn-sm btn-outline-success round">Accept</a>
                                                             <?php endif;?>
