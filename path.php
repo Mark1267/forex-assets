@@ -26,4 +26,5 @@ if($LOCAL){
     define('DB_NAME', 'u482663892_forexassets');
 }
 
+include('reuseables.php');
 ?>

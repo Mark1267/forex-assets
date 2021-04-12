@@ -48,6 +48,9 @@ $title = 'Profile';
                                                     <label class="custom-file-label" for="image">Choose file</label>
                                                 </div>
                                             </fieldset>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['empty']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['failed']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['type']; ?></small>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">

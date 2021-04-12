@@ -1,17 +1,17 @@
 <?php 
 include(ROOT_PATH . '/app/database/db.php');
+include(ROOT_PATH .  '/app/helpers/file_manger.php');
 include(ROOT_PATH . '/app/helpers/middleware.php');
 include(ROOT_PATH . '/app/helpers/validate.php');
 $errors = array();
 $error = array();
 
 #plans error var
-$errors['titlep'] = $titlep = $ROI = $min = $max = $dailyPercent = $errors['image'] = $errors['image1'] = '';
+$errors['titlep'] = $titlep = $ROI = $min = $max = $dailyPercent = '';
 $errors['ROI'] = $errors['min'] = $errors['max'] = $errors['dailyPercent'] = '';
 $errors['titlei'] = '';
 
-$errors['image'] = $errors['title'] = '';
-$titleP = '';
+$errors['title'] = $titleP = $errors['empty'] = $errors['failed'] = $errors['type'] = '';
 
 $table = 'plans';
 $plans = selectAll($table);
@@ -32,25 +32,11 @@ if(isset($_POST['addPlan'])){
     $genErrors = planVal($_POST);
     $errors = $genErrors[0];
     $subMainError = $genErrors[1];
-    if (!empty($_FILES['image']['name'])) {
-        $image_name = time() . '_' . $_FILES['image']['name'];
-        $destination = ROOT_PATH . "/assets/dashboard/images/plan/" . $image_name;
+    
+    $genE = upload(ROOT_PATH . "/assets/dashboard/images/plan/", XIMAGE, 'image');
+    $subMainError = array_merge($genE[0], $subMainError);
+    $errors = array_merge($genE[1], $errors);
 
-        $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-
-            $errors['image'] = '';
-        if ($result) {
-            $_POST['image'] = $image_name;
-            $errors['image1'] = '';
-        } else {
-            array_push($subMainError, 'Failed To Upload Image');
-            $errors['image1'] = 'Failed to upload image';
-        }
-    } else {
-        array_push($subMainError, 'Post Image Required');
-        $errors['image'] = 'Plan Image Required!!';
-        $errors['image1'] = '';
-    }
     #dd($subMainError);
     if(count($subMainError) === 0){
         $_POST['name'] = $_POST['titlep'];
@@ -78,26 +64,14 @@ if(isset($_POST['updatePlan'])){
     $genErrors = planVal($_POST);
     $errors = $genErrors[0];
     $subMainError = $genErrors[1];
-    if (!empty($_FILES['image']['name']) || !empty($_FILES['imageII']['name'])) {
-        if (!empty($_FILES['image']['name'])) {
-            $image_name = time() . '_' . $_FILES['image']['name'];
-            $destination = ROOT_PATH . "/assets/dashboard/images/plan/" . $image_name;
-    
-            $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-    
-                $errors['image'] = '';
-            if ($result) {
-                $_POST['image'] = $image_name;
-                $errors['image1'] = '';
-            } else {
-                array_push($subMainError, 'Failed To Upload Image');
-                $errors['image1'] = 'Failed to upload image';
-            }
-        } else {
-            array_push($subMainError, 'Post Image Required');
-            $errors['image'] = 'Plan Image Required!!';
-            $errors['image1'] = '';
-        }
+    if (empty($_FILES['image']['name'])) {
+        $errors['empty'] = '';
+        $errors['failed'] = '';
+        $errors['type'] = '';
+    }else{
+        $genE = upload(ROOT_PATH . "/assets/dashboard/images/plan/", XIMAGE, 'image');
+        $subMainError = array_merge($genE[0], $subMainError);
+        $errors = array_merge($genE[1], $errors);
     }
     if(count($subMainError) === 0){
         $_POST['name'] = $_POST['titlep'];

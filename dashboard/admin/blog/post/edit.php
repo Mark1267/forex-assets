@@ -44,7 +44,9 @@ $title = 'Edit Post';
                                                         <label class="custom-file-label" for="image">Choose file</label>
                                                     </div>
                                                 </div>
-                                                <small class="badge-light-danger text-danger"><?php echo $errors['image']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['empty']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['failed']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['type']; ?></small>
                                             </div>
                                             <small class="col-sm-12">Title</small>
                                             <hr>

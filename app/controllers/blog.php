@@ -1,5 +1,6 @@
 <?php 
 include(ROOT_PATH . '/app/database/db.php');
+include(ROOT_PATH .  '/app/helpers/file_manger.php');
 include(ROOT_PATH . '/app/helpers/paging.php');
 include(ROOT_PATH . '/app/helpers/middleware.php');
 include(ROOT_PATH . '/app/helpers/validate.php');
@@ -11,7 +12,7 @@ $table2 = 'category';
 #errors var
 $errors['title'] = $errors['about'] = $errors['image'] = $errors['cat_id'] = '';
 $errors['extitle'] = $errors['body'] = '';
-$errors['image'] = $errors['fimage'] = '';
+$errors['empty'] = $errors['failed'] = $errors['type'] = '';
 
 #post value
 $titlee = $about = $body = $titlep = '';
@@ -106,24 +107,10 @@ if (isset($_POST['addPost'])) {
     $genErrors = postVal($_POST);
     $errors = $genErrors[0];
     $subMainError = $genErrors[1];
-    if (!empty($_FILES['image']['name'])) {
-        $image_name = time() . '_' . $_FILES['image']['name'];
-        $destination = ROOT_PATH . "/assets/dashboard/images/posts/" . $image_name;
-
-        $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-
-        if ($result) {
-            $_POST['image'] = $image_name;
-            $errors['fimage'] = '';
-        } else {
-            array_push($subMainError, 'Failed To Upload Image');
-            $errors['fimage'] = 'Failed To Upload Image';
-        }
-        $errors['image'] = '';   
-    } else {
-        array_push($subMainError, 'Post Image Required');
-        $errors['image'] = 'Post Image Required';
-    }
+    
+    $genE = upload(ROOT_PATH . "/assets/dashboard/images/posts/", XIMAGE, 'image');
+    $subMainError = array_merge($genE[0], $subMainError);
+    $errors = array_merge($genE[1], $errors);
 
     if (count($subMainError) === 0) {
             unset($_POST['addPost']);
@@ -147,26 +134,13 @@ if (isset($_POST['updatePost'])) {
     $errors = $genErrors[0];
     $subMainError = $genErrors[1];
     if (empty($_FILES['image']['name'])) {
-        $errors['image'] = '';
-        $errors['fimage'] = '';
+        $errors['empty'] = '';
+        $errors['failed'] = '';
+        $errors['type'] = '';
     }else{
-        if (!empty($_FILES['image']['name'])) {
-            $image_name = time() . '_' . $_FILES['image']['name'];
-            $destination = ROOT_PATH . "/assets/dashboard/images/posts/" . $image_name;
-
-            $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-            $errors['image'] = '';
-            if ($result) {
-                $_POST['image'] = $image_name;
-                $errors['fimage'] = '';
-            } else {
-                array_push($subMainError, 'Failed To Upload Image');
-                $errors['fimage'] = 'Failed To Upload Image';
-            }
-        } else {
-            array_push($subMainError, 'Post Image Required');
-            $errors['image'] = 'Post Image Required';
-        }
+        $genE = upload(ROOT_PATH . "/assets/dashboard/images/posts/", XIMAGE, 'image');
+        $subMainError = array_merge($genE[0], $subMainError);
+        $errors = array_merge($genE[1], $errors);
     }
 
   if (count($subMainError) === 0) {

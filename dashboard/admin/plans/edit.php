@@ -36,8 +36,9 @@ $title = 'Edit Plan';
                                                     <label class="custom-file-label border-primary" for="image">Choose file 1</label>
                                                 </div>
                                             </div>
-                                            <small class="badge-light-danger text-danger"><?php echo $errors['image'];?></small>
-                                            <small class="badge-light-danger text-danger"><?php echo $errors['image1'];?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['empty']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['failed']; ?></small>
+                                                <small class="badge-light-danger text-danger"><?php echo $errors['type']; ?></small>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group">
