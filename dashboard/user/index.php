@@ -275,16 +275,13 @@ $title = 'Dashboard';
                                             $timeT = strtotime($fund['end']) - strtotime(date('Y-m-d h:i:s'));
                                             $currentTime = $plan['ROI'] - $currentTime + 0.00001;
                                             $earing = round(earnings($transaction['amount'], $plan['dailyPercent'], abs($currentTime)), 2);
-                                            if($currentTime <= 0){
-                                                $currentTime = 0;
+                                            if($timeT <= 0){
+                                                $timeT = 0;
                                                 $earing = $plan['dailyPercent'] / 100; 
                                                 $earing *=  $transaction['amount'];
                                                 $earing *= $plan['ROI'];/* Hello HI */
-                                            }
-                                            if(round($currentTime - $plan['ROI'], 1) <= 0){
-                                                $t = 0;
                                             }else{
-                                                $t = round(abs($currentTime - $plan['ROI']), 1);
+                                                $timeT = ceil($time1 / 86400);
                                             }
                                             ?>
                                                 <tr>
@@ -293,7 +290,7 @@ $title = 'Dashboard';
                                                     <td><?php echo $plan['dailyPercent']; ?>%</td>
                                                     <td>$<?php echo $transaction['amount']; ?></td>
                                                     <td>$<?php echo $earing; ?></td>
-                                                    <td><?php echo $t; ?></td>
+                                                    <td><?php echo $timeT; ?></td>
                                                     <?php if(strtotime($fund['end']) > strtotime(date('Y-m-d'))):?>
                                                         <td><a href="#!" class="btn btn-sm round btn-outline-info disabled">Ongoing</a></td>                                     
                                                         <?php else:?>                                         
