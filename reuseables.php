@@ -3,7 +3,9 @@ $reuseables = array(
     "XIMAGE" => array('jpg', 'jpeg', 'png', 'gif'),
     "XVIDEO" => array('mp4', 'mkv', 'avi', '3gp'),
     "XAUDIO" => array('mp3', 'm4a', 'wav', 'opus'),
-    "XFILE" => array('txt', 'pdf', 'docx')
+    "XFILE" => array('txt', 'pdf', 'docx'),
+    "UMAIL" => 'support@forex-assets.exchange',
+    "PMAIL" => 'David032021'
 );
 
 foreach($reuseables as $key => $value){

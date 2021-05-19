@@ -18,12 +18,14 @@ if($LOCAL){
     define('DB_USER', 'root');
     define('DB_PASS', '');
     define('DB_NAME', 'rocktera-assets');
+    define("DEMO", TRUE);
 }else{
     define('BASE_URL', 'https://forex-assets.exchange');
     define('HOST', 'localhost');
     define('DB_USER', 'u482663892_forexassets');
     define('DB_PASS', 'David032021');
     define('DB_NAME', 'u482663892_forexassets');
+    define("DEMO", FALSE);
 }
 
 include('reuseables.php');

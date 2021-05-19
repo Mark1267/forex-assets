@@ -2,7 +2,7 @@
 include('../../../path.php');
 include(ROOT_PATH . '/app/controllers/accounts.php');
 adminOnly();
-$transactions = selectAll($table2, ['nature' => 1, 'status' => 1]);
+$transactions = selectAll($table2, ['nature' => 0, 'status' => 1]);
 
 $title = 'All Withdrawals';
 ?>
