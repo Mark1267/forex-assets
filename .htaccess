@@ -1,6 +1,13 @@
 ErrorDocument 404 /404.php
 php_flag display_errors On
 
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:forex-assets.exchange
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?forex-assets.exchange
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:forex-assets.exchange
+
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
