@@ -100,6 +100,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                               <i class="la la-key"></i>
                             </div>
                             <div class="help-block font-small-3"></div>
+                        <small class="text-danger"><?php echo $errors['pr']; ?></small>
                           </fieldset>
                         </div>
                         <div class="col-12 col-md-6">
@@ -111,6 +112,8 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                               <i class="la la-key"></i>
                             </div>
                             <div class="help-block font-small-3"></div>
+                        <small class="text-danger"><?php echo $errors['cpse']; ?></small>
+                        <small class="text-danger"><?php echo $errors['cps']; ?></small>
                           </fieldset>
                         </div>
                       </div>

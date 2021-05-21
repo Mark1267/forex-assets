@@ -28,7 +28,7 @@ $title = 'Sign In';
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                    <?php include(ROOT_PATH . '/app/includes/message.php'); ?>
+                                            <?php include(ROOT_PATH . '/app/includes/message.php'); ?>
                                         <form class="form-horizontal" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" novalidate>
                                             <fieldset class="form-group position-relative has-icon-left">
                                                 <input type="text" class="form-control" name="email" placeholder="Your Email" required>

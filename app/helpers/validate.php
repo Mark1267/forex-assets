@@ -16,8 +16,8 @@ function userVal($user){
             $errors['ef'] = '';
         }
         if(!empty($user['firstname']) && !preg_match($regexname, $user['firstname'])){
-            array_push($error, 'Invalid Charatcers In FirstName');
-            $errors['efi'] = 'Invalid Charatcers In FirstName';
+            array_push($error, 'Invalid Characters In FirstName');
+            $errors['efi'] = 'Invalid Characters In FirstName';
         }else{
             $errors['efi'] = '';
         }
@@ -30,8 +30,8 @@ function userVal($user){
             $errors['el'] = '';
         }
         if(!empty($user['lastname']) && !preg_match($regexname, $user['lastname'])){
-            array_push($error, 'Invalid Charatcers In LastName');
-            $errors['eli'] = 'Invalid Charatcers In LastName';
+            array_push($error, 'Invalid Characters In LastName');
+            $errors['eli'] = 'Invalid Characters In LastName';
         }else{
             $errors['eli'] = '';
         }
@@ -87,7 +87,7 @@ function userVal($user){
         }else{
             $errors['pr'] = '';
         }
-        if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
+        /* if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
             array_push($error, 'Password:Invalid characters');
             $errors['pri'] = 'Password:Invalid characters';
         }else{
@@ -98,7 +98,7 @@ function userVal($user){
            $errors['psl'] = "Password Must contain 8 to 16 characters";
         }else{
             $errors['psl'] = '';
-        }
+        } */
     
         #cpassword
         if (empty($user['cpassword'])) {
@@ -191,7 +191,7 @@ function complete($user){
     $lenght = strlen($user['password']);
 
     #password
-    if (!empty($user['password'])) {
+    /*if (!empty($user['password'])) {
         if ($lenght <= 8 || $lenght >= 16) {
         array_push($error, ucwords('Password Must contain 8 to 16 characters'));
         $errors['psl'] = "Password Must contain 8 to 16 characters";
@@ -208,7 +208,7 @@ function complete($user){
         $errors['psl'] = '';
         $errors['pri']  = '';
         unset($user['password']);
-    }
+    }*/
 
     #cpassword
     if (!empty($user['password'])) {
