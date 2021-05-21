@@ -285,14 +285,25 @@ function accoutVal($account){
         $errors['currencyMatch'] = '';
     }
 
-
     #existing
     $existingName = selectAll('accounts', ['name'=> $account['name']]);
-    if($existingName){
+    if(isset($account['updateAccount'])){
+        if($existingName){
+            if($existingName[0]['name']=== $account['name']){
+                $errors['exn'] = '';
+            }else{
+                array_push($error, '11');
+                $errors['exn'] = 'Account name already existing.';
+            }
+        }else{
+            $errors['exn'] = '';
+        }
+    }elseif($existingName){
         array_push($error, '11');
         $errors['exn'] = 'Account name already existing.';
+    }else{
+        $errors['exn'] = '';
     }
-
     
     $genErrors = array($errors, $error);
     return $genErrors;
