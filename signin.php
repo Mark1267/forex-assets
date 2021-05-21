@@ -15,8 +15,8 @@ $title = 'Sign In';
             </div>
             <div class="content-body">
                 <section class="flexbox-container">
-                    <div class="col-12 d-flex align-items-center justify-content-center">
-                        <div class="col-md-4 col-10 box-shadow-2 p-0">
+                    <div class="col-12 d-flex align-items-center justify-content-center p-0 p-md-2">
+                        <div class="col-md-4 col-12 box-shadow-2 p-0">
                             <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                                 <div class="card-header border-0">
                                     <div class="card-title text-center">
@@ -30,17 +30,24 @@ $title = 'Sign In';
                                     <div class="card-body">
                                             <?php include(ROOT_PATH . '/app/includes/message.php'); ?>
                                         <form class="form-horizontal" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" novalidate>
-                                            <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" name="email" placeholder="Your Email" required>
-                                                <div class="form-control-position">
-                                                    <i class="ft-user"></i>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
-                                                <div class="form-control-position">
-                                                    <i class="la la-key"></i>
-                                                </div>
+                                            
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="email" class="form-control" tabindex="1" value="<?php echo $email; ?>" id="email" name="email" required data-validation-required-message="Please enter your email." placeholder="Your Email">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                    <div class="help-block font-small-3"></div>
+                                                    <small class="text-danger"><?php echo $errors['em']; ?></small>
+                                                    <small class="text-danger"><?php echo $errors['emm']; ?></small>
+                                                </fieldset>
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="password" class="form-control" value="<?php echo $password; ?>" required tabindex="2" id="password" name="password" required data-validation-required-message="Please your password." placeholder="Enter Password" required>
+                                                    <div class="form-control-position">
+                                                        <i class="la la-key"></i>
+                                                    </div>
+                                                    <div class="help-block font-small-3"></div>
+                                                    <small class="text-danger"><?php echo $errors['pr']; ?></small>
+                                                </fieldset>
                                                 <div class="form-group row">
                                                     <div class="col-md-6 col-12 text-center text-sm-left mt-1">
                                                         <fieldset>
@@ -51,6 +58,7 @@ $title = 'Sign In';
                                                     <div class="col-md-6 col-12 float-sm-left text-center text-sm-right"><a href="<?php echo BASE_URL . '/forget/'; ?>" class="card-link">Forgot Password?</a></div>
                                                 </div>
                                                 <button type="submit" name="signin" class="btn btn-outline-info btn-block"><i class="ft-unlock"></i> Login</button>
+                                            
                                         </form>
                                     </div>
                                     <p class="card-subtitle line-on-side text-muted text-center font-small-3 mx-2 my-1">

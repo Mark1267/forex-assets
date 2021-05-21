@@ -17,6 +17,7 @@ $errors['cps'] = $errors['cpse'] = $errors['exe'] = $errors['et'] = '';
 $errors['efi'] = $errors['eli'] = $errors['em'] = $errors['emm'] = '';
 $errors['failed'] = $errors['type'] = $errors['ph'] = $errors['exph'] = '';
 $errors['phone'] = $errors['eun'] = $errors['phi'] = $errors['empty'] = '';
+$errors['emm'] = '';
 
 $table = 'users';
 
@@ -186,11 +187,11 @@ if (isset($_POST['signin'])) {
         if ($user && password_verify($_POST['password'], $user['password'])) {
             // login and redirect
             loginUser($user);
-            }else {
-                $_SESSION['message'] = 'Wrong email address or password.';
-                $_SESSION['type'] = 'danger';
-                $email = $_POST['email'];
-                $password = $_POST['password'];
+        }else {
+            $_SESSION['message'] = 'Wrong Email Address Or Password!';
+            $_SESSION['type'] = 'danger';
+            $email = $_POST['email'];
+            $password = $_POST['password'];
             }
     }else{
         $email = $_POST['email'];

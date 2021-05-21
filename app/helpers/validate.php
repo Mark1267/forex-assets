@@ -168,7 +168,7 @@ function signinVal($user){
     }else{
         $errors['pr'] = '';
     }
-    if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
+    /* if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
         array_push($error, 'Password:Invalid characters');
         $errors['pri'] = 'Password:Invalid characters';
     }else{
@@ -179,7 +179,7 @@ function signinVal($user){
        $errors['psl'] = "Password Must contain 8 to 16 characters";
     }else{
         $errors['psl'] = '';
-    }
+    } */
     $genErrors = array($errors, $error);
     return $genErrors;
 }
@@ -791,7 +791,7 @@ function passVal($user){
     }else{
         $errors['pr'] = '';
     }
-    if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
+    /* if (!empty($user['password']) && !preg_match($regexpassword, $user['password'])) {
         array_push($error, 'Password:Invalid characters');
         $errors['pri'] = 'Password:Invalid characters';
     }else{
@@ -802,7 +802,7 @@ function passVal($user){
        $errors['psl'] = "Password Must contain 8 to 16 characters";
     }else{
         $errors['psl'] = '';
-    }
+    } */
 
     #cpassword
     if (empty($user['cpassword'])) {

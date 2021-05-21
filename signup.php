@@ -16,7 +16,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
       </div>
       <div class="content-body">
         <section class="flexbox-container">
-          <div class="col-12 d-flex align-items-center justify-content-center">
+          <div class="col-12 d-flex align-items-center justify-content-center p-0 p-md-2">
             <div class="col-md-7 col-12 box-shadow-2 p-0">
               <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                 <div class="card-header border-0 pb-0">
@@ -28,7 +28,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                   </h6>
                 </div>
                 <div class="card-content">
-                  <div class="card-body">
+                  <div class="card-body p-1">
                     <form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" novalidate>
                       <div class="row">
                         <?php if(isset($_GET['ref'])):?>
@@ -36,7 +36,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <?php endif;?>
                         <div class="col-12 col-sm-6 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
-                            <input type="text" name="firstname" id="firstname" class="form-control input-lg"
+                            <input type="text" name="firstname" id="firstname" class="form-control"
                             placeholder="First Name" tabindex="1" required data-validation-required-message="Please enter first name." value="<?php echo $firstname; ?>">
                             <div class="form-control-position">
                               <i class="ft-user"></i>
@@ -48,7 +48,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         </div>
                         <div class="col-12 col-sm-6 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
-                            <input type="text" name="lastname" id="lastname" class="form-control input-lg"
+                            <input type="text" name="lastname" id="lastname" class="form-control"
                             placeholder="Last Name" tabindex="2" required data-validation-required-message="Please enter your last name." value="<?php echo $lastname; ?>">
                             <div class="form-control-position">
                               <i class="ft-user"></i>
@@ -60,7 +60,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         </div>
                       </div>
                       <fieldset class="form-group position-relative has-icon-left">
-                        <input type="text" name="username" id="username" class="form-control input-lg"
+                        <input type="text" name="username" id="username" class="form-control"
                         placeholder="UserName" tabindex="3" required data-validation-required-message="Please enter a username." value="<?php echo $username; ?>">
                         <div class="form-control-position">
                           <i class="ft-user"></i>
@@ -70,7 +70,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <small class="text-danger"><?php echo $errors['unr']; ?></small>
                       </fieldset>
                       <fieldset class="form-group position-relative has-icon-left">
-                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address"
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address"
                         tabindex="4" required data-validation-required-message="Please enter email address." value="<?php echo $email; ?>">
                         <div class="form-control-position">
                           <i class="ft-mail"></i>
@@ -81,7 +81,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         <small class="text-danger"><?php echo $errors['emei']; ?></small>
                       </fieldset>
                       <fieldset class="form-group position-relative has-icon-left">
-                        <input type="tel" name="phone" id="phone" class="form-control input-lg" placeholder="Phone Number"
+                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number"
                         tabindex="5" required data-validation-required-message="Please enter phone number." value="<?php echo $phone; ?>">
                         <div class="form-control-position">
                           <i class="ft-phone"></i>
@@ -94,7 +94,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                       <div class="row">
                         <div class="col-12 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
-                            <input type="password" name="password" id="password" class="form-control input-lg"
+                            <input type="password" name="password" id="password" class="form-control"
                             placeholder="Password" tabindex="6" required value="<?php echo $password; ?>">
                             <div class="form-control-position">
                               <i class="la la-key"></i>
@@ -105,7 +105,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                         </div>
                         <div class="col-12 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">
-                            <input type="password" name="cpassword" id="cpassword" class="form-control input-lg"
+                            <input type="password" name="cpassword" id="cpassword" class="form-control"
                             placeholder="Confirm Password" tabindex="7" data-validation-matches-match="password"
                             data-validation-matches-message="Password & Confirm Password must be the same." value="<?php echo $cpassword; ?>">
                             <div class="form-control-position">
@@ -132,7 +132,7 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                       </div>
                       <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 mx-auto">
-                          <button type="submit" class="btn btn-info btn-lg btn-block" name="signup"><i class="ft-user"></i> Register</button>
+                          <button type="submit" class="btn btn-info btn-block" name="signup"><i class="ft-user"></i> Register</button>
                         </div>
                       </div>
                     </form>
