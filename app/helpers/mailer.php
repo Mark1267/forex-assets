@@ -50,10 +50,10 @@ function mailing($template_file, $swap_var){
             $mail->Port       = 465;                                    // TCP port to connect to, use 587 for `PHPMailer::ENCRYPTION_STARTTLS` above
             
             //Recipients
-            $mail->setFrom('support@forex-assets.exchange', 'Forex Assets');
+            $mail->setFrom(UMAIL, 'Wieva Trade');
             $mail->addAddress($email_to, $swap_var['#name#'] . ' ' . $swap_var['#name2#']);
             if ($swap_var['{EMAIL_TITLE}'] === 'Deposit Request' || $swap_var['{EMAIL_TITLE}'] === 'Withdrawal Request') {
-                $mail->addCC('support@forex-assets.exchange');
+                $mail->addCC(UMAIL, 'Wieva Trade');
             }
             
             
