@@ -20,7 +20,7 @@ if($LOCAL){
     define('DB_NAME', 'rocktera-assets');
     define("DEMO", TRUE);
 }else{
-    define('BASE_URL', 'https://forex-assets.exchange');
+    define('BASE_URL', 'https://wievatrade.com');
     define('HOST', 'localhost');
     define('DB_USER', 'u482663892_forexassets');
     define('DB_PASS', 'David032021');
