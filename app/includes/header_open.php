@@ -25,8 +25,8 @@
           <i class="fa fa-bars"></i>
           </button>
           <a class="navbar-brand" href="<?php echo BASE_URL . '/'; ?>">
-            <img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-white.png" class="logo logo-display" alt="" style="width: 150px; margin-top: 15px;">
-            <img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-white.png" class="logo logo-scrolled" alt="" style="width: 150px; margin-top: 15px;">
+            <img src="<?php echo FAVI;?>" class="FAVI logo-display" alt="" style="width: 150px; margin-top: 15px;">
+            <img src="<?php echo FAVI;?>" class="logo logo-scrolled" alt="" style="width: 150px; margin-top: 15px;">
           </a>
         </div> <!-- End Header Navigation -->
         <!-- Collect the nav links, forms, and other content for toggling -->

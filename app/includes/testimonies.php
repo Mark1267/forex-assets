@@ -12,7 +12,7 @@
       <div class="item">
         <div class="people_wrap border_radius left">
         <i class="icon-quotes-right"></i>
-        <p>Standing idle is not an option when your core business is security. ZENEX is proud to partner with FOREX-ASSETS because our goals converge around a common pillar — trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p>
+        <p>Standing idle is not an option when your core business is security. ZENEX is proud to partner with WievaTrade because our goals converge around a common pillar — trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p>
         </div>
         <div class="testinomial_pic">
           <div class="pic"><img class="iklk" width="58px" alt="testinomial" src="<?php echo BASE_URL . '/assets/open/images/2.jpg'; ?>"></div>
@@ -25,7 +25,7 @@
       <div class="item">
         <div class="people_wrap border_radius right">
         <i class="icon-quotes-right"></i>
-        <p>As a trusted blockchain infrastructure provider and technology partner, SEC supports regulated financial companies in their transformation within the crypto asset world. We are convinced by FOREX-ASSETS'S leading crypto asset custody solution and our goal is to integrate them into our blockchain crypto property services.</p>
+        <p>As a trusted blockchain infrastructure provider and technology partner, SEC supports regulated financial companies in their transformation within the crypto asset world. We are convinced by WievaTrade'S leading crypto asset custody solution and our goal is to integrate them into our blockchain crypto property services.</p>
         </div>
         <div class="testinomial_pic text-right pull-right">
           <div class="testinomial_body">
@@ -38,7 +38,7 @@
       <div class="item">
         <div class="people_wrap border_radius left">
         <i class="icon-quotes-right"></i>
-        <p>With FOREX-ASSETS, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
+        <p>With WievaTrade, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
         </div>
         <div class="testinomial_pic">
           <div class="pic"><img width="58px" class="iklk" alt="testinomial" src="<?php echo BASE_URL . '/assets/open/images/3.jpg'; ?>"></div>
@@ -51,7 +51,7 @@
       <div class="item">
         <div class="people_wrap border_radius right">
         <i class="icon-quotes-right"></i>
-        <p>It's really wonderful. I would also like to say thank you to all your staff. FOREX-ASSETS did exactly what you said it does.</p>
+        <p>It's really wonderful. I would also like to say thank you to all your staff. WievaTrade did exactly what you said it does.</p>
         </div>
         <div class="testinomial_pic text-right pull-right">
           <div class="testinomial_body">

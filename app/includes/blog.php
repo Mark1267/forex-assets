@@ -13,9 +13,9 @@
             <?php $posts = selectAllLimits($table, [], 0, 5); ?>
                 <?php foreach($posts as $post): ?>
                     <div class="single_post bottom15">
-                        <a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>" class="post"><img class=" img-responsive" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" alt="post image"></a>
+                        <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>" class="post"><img class=" img-responsive" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" alt="post image"></a>
                         <div class="text col-12" style="display: block;">
-                            <a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>"><?php echo $post['title']; ?></a>
+                            <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>"><?php echo $post['title']; ?></a>
                             <p><?php echo date('F j, Y h:i:s a', strtotime($post['created_at'])); ?></p>
                         </div>
                     </div>

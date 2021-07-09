@@ -5,7 +5,7 @@
       <div class="contact_inner">
         <i class="icon-phone4"></i>
         <h5><strong>(+44) 791-921-4075</strong></h5>
-        <a href="#.">support@forex-assets.exchange</a>
+        <a href="#.">support@wievatrade.com</a>
       </div>
     </div>
     <div class="col-sm-3">
@@ -31,8 +31,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 footer_panel heading_space">
-        <a href="<?php echo BASE_URL . '/'; ?>"  class="footer_logo bottom30" style="padding: 5px; border-radius: 3px;"><img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-white.png" style="width: 140px;" alt="Forex-Assets"></a>
-        <p class="bottom30">Forex-Assets Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products. </p>
+        <a href="<?php echo BASE_URL . '/'; ?>"  class="footer_logo bottom30" style="padding: 5px; border-radius: 3px;"><img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-white.png" style="width: 140px;" alt="WievaTrade"></a>
+        <p class="bottom30">WievaTrade Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products. </p>
         <ul class="social_icon">
           <li><a href="#." class="facebook"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#." class="instagram"><i class="icon-instagram"></i></a></li>
@@ -55,10 +55,10 @@
             foreach($posts as $post): ?>
             <div class="media">
                 <div class="media-left">
-                  <a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>"><img class="media-object" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" width="40px" alt="<?php echo $post['title']; ?>"></a>
+                  <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>"><img class="media-object" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" width="40px" alt="<?php echo substr($post['title'], 0, 10) . '...'; ?>"></a>
                 </div>
                 <div class="media-body">
-                  <p><a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>"><?php echo $post['title']; ?></a></p>
+                  <p><a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>"><?php echo $post['title']; ?></a></p>
                   <span><i class="icon-calendar"></i><?php echo date('F j, Y h:i:s a', strtotime($post['created_at'])); ?></span>
                 </div>
             </div>
@@ -71,7 +71,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>Copyright &copy; <?php echo date('Y'); ?> <a href="#.">Forex-Assets</a>. all rights reserved.</p>
+        <p>Copyright &copy; <?php echo date('Y'); ?> <a href="#.">WievaTrade</a>. all rights reserved.</p>
       </div>
     </div>
   </div>

@@ -38,7 +38,7 @@ $title = 'Home';
         data-transform_idle="o:1;"
         data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
 		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"  							 
-        data-start="1300"><p class="white_t">A trusted authority on digital currency investing, Forex-Assets provides secure access and diversified exposure to 
+        data-start="1300"><p class="white_t">A trusted authority on digital currency investing, WievaTrade provides secure access and diversified exposure to 
         <br> the digital currency asset class.</p>
         </div>
         <div class="tp-caption tp-resizeme text-center" 							
@@ -71,7 +71,7 @@ $title = 'Home';
         data-transform_idle="o:1;"
         data-transform_in="y:-50px;opacity:0;s:1500;e:Power3.easeOut;" 
 		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"  							 
-        data-start="1300"><p class="white_t">A trusted authority on digital currency investing, Forex-Assets provides secure access and diversified exposure to 
+        data-start="1300"><p class="white_t">A trusted authority on digital currency investing, WievaTrade provides secure access and diversified exposure to 
         <br> the digital currency asset class.</p>
         </div>
         <div class="tp-caption tp-resizeme text-center" 							
@@ -101,9 +101,9 @@ $title = 'Home';
         <figure> <img src="https://fortescueinvestment.com/ui/images/good-plans.jpg" alt="Good Plans" class="img-responsive"></figure>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 right top40">
-        <p class="bottom20">Established in 2015, Forex-Assets is a trusted authority on digital asset investment
-          Forex-Assets is run by traders and investment professionals combining decades of investment experience gained in major Wall Street banks, including Bankers Trust, Goldman Sachs, JPMorgan, Morgan Stankey, BofA Merrill Lynch, UBS, and Rothschild, as well as global hedge funds.</p>
-        <h4 class="bottom10">Forex-Assets</h4>
+        <p class="bottom20">Established in 2015, WievaTrade is a trusted authority on digital asset investment
+          WievaTrade is run by traders and investment professionals combining decades of investment experience gained in major Wall Street banks, including Bankers Trust, Goldman Sachs, JPMorgan, Morgan Stankey, BofA Merrill Lynch, UBS, and Rothschild, as well as global hedge funds.</p>
+        <h4 class="bottom10">WievaTrade</h4>
         <span class="bottom20" style="margin-bottom: 40px !important;">An investment firm that offers a range of digital asset strategy solutions to institutional investors.</span><br>
         <p class="bottom20">This experience is further complemented by the managers' academic backgrounds in mathematics, econometrics and computer engineering with degrees from Wharton, LSE, and the University of Oxford.</p>
         <a href="<?php echo BASE_URL . '/signin'; ?>" class="text-uppercase border_radius btn-green">read more</a>
@@ -186,7 +186,7 @@ $title = 'Home';
     <div class="row">
       <div class="col-sm-12 text-center wow fadeInDown">
         <h2 class="text-capitalize bottom10">Start <span class="blue_t">Investing</span></h2>
-        <p class="heading_space">How to Start Investing with Forex-Assets</p>
+        <p class="heading_space">How to Start Investing with WievaTrade</p>
       </div>
     </div>
     <div class="row info">
@@ -312,11 +312,11 @@ $title = 'Home';
       <div class="col-sm-6 video wow fadeInLeft"  data-wow-delay="500ms">
         <img src="https://fortescueinvestment.com/ui/images/video-img.jpg" alt="video">
        <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=8ac832&amp;wmode=opaque" 
-      class="html5lightbox video-btn" data-width="900" data-height="420" title="Forex-Assets in partnership with.. "><i class="icon-play2"></i></a> 
+      class="html5lightbox video-btn" data-width="900" data-height="420" title="WievaTrade in partnership with.. "><i class="icon-play2"></i></a> 
       </div>
       <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight"  data-wow-delay="500ms">
-        <h2 class="bottom30 text-capitalize">About  <span class="green_t">Forex-Assets</span></h2>
-        <p class="bottom30">Forex-Assets Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products.</p>
+        <h2 class="bottom30 text-capitalize">About  <span class="green_t">WievaTrade</span></h2>
+        <p class="bottom30">WievaTrade Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products.</p>
         <p class="bottom30"> All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
         <a href="<?php echo BASE_URL . '/signin'; ?>" class="btn-white text-uppercase border_radius">get started</a>
       </div>
@@ -364,7 +364,7 @@ $title = 'Home';
       <div class="col-sm-12 text-center wow fadeInDown">
         <h2 class="bottom10 text-capitalize">Our <span class="blue_t">Teams </span></h2>
         <h3 class="bottom10 text-capitalize">Led by bold and <span class="blue_t">innovative </span>thinkers</h3>
-        <p class="bottom20" >Forex-Assets has been helping marketing teams optimize delivery of awesome customer experiences for <br>decades. With a team of trailblazers and innovators at the helm, Forex-Assets is <br>trusted by some of the world’s top companies across the globe.</p><br>
+        <p class="bottom20" >WievaTrade has been helping marketing teams optimize delivery of awesome customer experiences for <br>decades. With a team of trailblazers and innovators at the helm, WievaTrade is <br>trusted by some of the world’s top companies across the globe.</p><br>
       </div>
     </div>
     <div class="row">

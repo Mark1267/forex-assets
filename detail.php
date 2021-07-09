@@ -49,7 +49,7 @@ $title = 'Our Services';
         </ul>
         <div class="testinomial_wrap heading_space">
           <div class="testinomial_text" style="text-align: center;"> <img style="width: 188px;" alt="testinomial" src="<?php echo BASE_URL . '/assets/open/images/logo-dark.png'; ?>" class="quote">
-            <p>With Forex-Assets, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
+            <p>With WievaTrade, our aim is to help the financial sector with the opportunities and challenges of the blockchain technology by offering outstanding solutions in the field of distributed ledgers, cryptocurrencies and digital assets.</p>
           </div>
           <div class="testinomial_pic"> <img width="58px" alt="testinomial" src="<?php echo BASE_URL . '/assets/dashboard/images/user/avatar-s-19.png'; ?>" class=""> <span class="color">Bard Markson</span> <span class="post_img">Client</span> </div>
         </div>
@@ -72,17 +72,17 @@ $title = 'Our Services';
                 </div>
               </div>
               <h3 class="bottom20">Single-Asset Products</h3>
-              <p class="bottom30"> Forex-Assets Bitcoin Trust.  Forex-Assets's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin. It enables investors to gain exposure to the price movement of bitcoin without the challenges of buying, storing, and safekeeping bitcoins.</p>
+              <p class="bottom30"> WievaTrade Bitcoin Trust.  WievaTrade's flagship product, the Bitcoin Investment Trust (symbol: RBTC), is a private, open-ended trust that is invested exclusively in bitcoin and derives its value solely from the price of bitcoin. It enables investors to gain exposure to the price movement of bitcoin without the challenges of buying, storing, and safekeeping bitcoins.</p>
 
-<p class="bottom40">• Forex-Assets Bitcoin Cash Trust. An alternative approach for electronic cash.</p>
+<p class="bottom40">• WievaTrade Bitcoin Cash Trust. An alternative approach for electronic cash.</p>
 
-<p class="bottom40">• Forex-Assets Ethereum Trust. A decentralized, smart-contract platform.</p>
+<p class="bottom40">• WievaTrade Ethereum Trust. A decentralized, smart-contract platform.</p>
 
-<p class="bottom40">• Forex-Assets Ethereum Classic Trust. A flexible currency for the Internet of Things.</p>
+<p class="bottom40">• WievaTrade Ethereum Classic Trust. A flexible currency for the Internet of Things.</p>
 
-<p class="bottom40">• Forex-Assets Litecoin Trust. A digital currency for fast, low-cost payments.</p>
+<p class="bottom40">• WievaTrade Litecoin Trust. A digital currency for fast, low-cost payments.</p>
 
-<p class="bottom40">• Forex-Assets Stellar Lumens Trust. A platform that connects banks, payment systems, and people.
+<p class="bottom40">• WievaTrade Stellar Lumens Trust. A platform that connects banks, payment systems, and people.
 </p>
               <div class="row">
                 <div class="col-md-5">
@@ -101,7 +101,7 @@ $title = 'Our Services';
                     </div>
                     <div class="accordion_title"> <a href="javascript:void(0)">About Fin Growth <i class="fa fa-plus"></i></a>
                       <div class="content">
-                        <!--<p class="bottom20">Standing idle is not an option when your core business is security. <a href="https://zenexassets.com" class="text-info">ZENEX</a> is proud to partner with Forex-Assetsbecause our goals converge around a common pillar of trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p> -->
+                        <!--<p class="bottom20">Standing idle is not an option when your core business is security. <a href="https://zenexassets.com" class="text-info">ZENEX</a> is proud to partner with WievaTradebecause our goals converge around a common pillar of trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p> -->
                         <p class="bottom0">We are independent 
 We will remain a privately owned, independent firm to ensure that we act in the best interest of our clients and employees.</p>
                       </div>
@@ -173,7 +173,7 @@ We will remain a privately owned, independent firm to ensure that we act in the 
                 </div>
               </div>
               <h3 class="bottom20">Diversified Products</h3>
-              <p class="bottom30">• Forex-Assets Digital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
+              <p class="bottom30">• WievaTrade Digital Large Cap Fund. A strategic large cap fund for diversified exposure.</p>
               <div class="row">
                 <div class="col-md-5">
                   <h2 class="bottom10">Key<span class="blue_t">Benefits</span></h2>
@@ -191,7 +191,7 @@ We will remain a privately owned, independent firm to ensure that we act in the 
                     </div>
                     <div class="accordion_title"> <a href="javascript:void(0)">About Fin Growth <i class="fa fa-plus"></i></a>
                       <div class="content">
-                        <!-- <p class="bottom20">Standing idle is not an option when your core business is security. <a href="https://zenexassets.com" class="text-info">ZENEX</a> is proud to partner with Forex-Assetsbecause our goals converge around a common pillar of trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p> -->
+                        <!-- <p class="bottom20">Standing idle is not an option when your core business is security. <a href="https://zenexassets.com" class="text-info">ZENEX</a> is proud to partner with WievaTradebecause our goals converge around a common pillar of trust. The projects in prospect are exciting and we are looking forward to providing an expanded portfolio of solutions, including distributed ledger and cryptographic technologies to respond to our clients’ shifting needs.</p> -->
                         <p class="bottom0">We are independent 
 We will remain a privately owned, independent firm to ensure that we act in the best interest of our clients and employees.</p>
                       </div>

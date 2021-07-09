@@ -45,7 +45,7 @@ $title = "Password Reset";
 								</div>
 								<div class="card-footer border-0"><hr>
 								<p class="float-sm-left text-center"><a href="<?php echo BASE_URL . '/signin'; ?>" class="btn btn-danger">Login</a></p>
-								<p class="float-sm-right text-center">New to Forex Assets? <a href="<?php echo BASE_URL . '/signup'; ?>" class="card-link">Create Account</a></p>
+								<p class="float-sm-right text-center">New to WievaTrade? <a href="<?php echo BASE_URL . '/signup'; ?>" class="card-link">Create Account</a></p>
 								</div>
 							</div>
 						</div>

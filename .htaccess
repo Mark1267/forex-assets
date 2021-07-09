@@ -8,21 +8,21 @@
 #</IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-#ErrorDocument 404 https://www.minnersedge.com/404
+#ErrorDocument 404 https://www.wievatrade.com.com/404
 
-# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:minnersedge.com
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:wievatrade.com.com
 RewriteEngine on
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} (www\.)?minnersedge.com
+RewriteCond %{HTTP_HOST} (www\.)?wievatrade.com.com
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:minnersedge.com
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:wievatrade.com.com
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
 ReWriteRule ^signup/([0-9a-zA-Z]+) signup.php?ref=$1 [NC,L]
-ReWriteRule ^blog/([0-9a-zA-Z]+) blog.php?cat_id=$1 [NC,L]
-ReWriteRule ^blog-single/([0-9a-zA-Z]+) blog-single.php?id=$1 [NC,L]
+ReWriteRule ^new/([0-9a-zA-Z]+) new.php?cat_id=$1 [NC,L]
+ReWriteRule ^newsdetail/([0-9a-zA-Z]+) newsdetail.php?id=$1 [NC,L]
 ReWriteRule ^verify/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) verify.php?key=$1&auth=$2 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d

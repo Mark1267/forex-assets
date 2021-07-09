@@ -5,14 +5,14 @@ $reuseables = array(
     "XAUDIO" => array('mp3', 'm4a', 'wav', 'opus'),
     "XFILE" => array('txt', 'pdf', 'docx'),
     "UMAIL" => 'support@wievatrade.com',
-    "PMAIL" => 'Wievatrade06'
+    "PMAIL" => 'Wievatrade06',
     "XMAIL" => array(
         'TOP' => '<!DOCTYPE html><html lang="en" style="padding: 0; margin: 0;">
         <body style="padding: 0; margin: 0; background: rgb(248, 248, 248); font-family: Arial; font-size: 14px;">
             <div style="background-color:white; max-width: 600px; margin: 0px auto; position: relative;">
                 <div style="padding: 10px; background: #373435; min-height: 60px;">
                     <div style="margin: 0px auto; width: 66.66%;">
-                        <img src="' . LOGO . '" alt="Forex-Assets_logo" class="img-fluid" style="width: 100px; vertical-align: middle;">
+                        <img src="' . LOGO . '" alt="WievaTrade_logo" class="img-fluid" style="width: 100px; vertical-align: middle;">
                     </div>
                 </div>
                 <div style="position: relative; padding: 25px;">',

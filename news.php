@@ -52,18 +52,18 @@ $title = 'Blog Posts';
           <?php $category = selectOne($table2, ['id' => $post['cat_id']]);?>
           <div class="blog_item media heading_space">
             <div class="media-left">
-              <a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>">
+              <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>">
                 <img class="media-object my-auto" width="300px" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" alt="<?php echo $post['title']; ?>">
               </a>
             </div>
             <div class="media-body" style="word-wrap: break-word;">
-              <h3><a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
+              <h3><a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
               <ul class="blog_date bottom30">
                 <li><a href="javascript:void(0)"><?php echo $category['title']; ?></a></li>
                 <li><a href="javascript:void(0)"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></a></li>
               </ul>
             <span class="bottom30"><?php echo html_entity_decode(substr($post['body'], 0, 750) . '...'); ?></span>
-            <a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>" class="text-uppercase continue">Continue Reading</a>
+            <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>" class="text-uppercase continue">Continue Reading</a>
             </div>
           </div>
         <?php endforeach; ?>
