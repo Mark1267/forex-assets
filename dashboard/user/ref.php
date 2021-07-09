@@ -25,9 +25,9 @@ $title = 'Referrals';
                             <div class="card-body">
                                 <h5 class="card-title">Referrals Link</h5>
                                 <p class="card-text p-1 bg-light inline-block">
-                                    <?php echo BASE_URL . '/signup.php?ref=' . $code['ref']; ?>
+                                    <?php echo BASE_URL . '/signup/' . $code['ref']; ?>
                                 </p>
-                                <div class="btn i-block btn-success" data-clipboard-text="<?php echo BASE_URL . '/signup.php?ref=' . $code['ref']; ?>" data-filter="copy" data-toggle="tooltip" data-orignal-title="copy"><i data-feather="copy"></i>&nbsp;Copy Link</div>
+                                <div class="btn i-block btn-success" data-clipboard-text="<?php echo BASE_URL . '/signup/' . $code['ref']; ?>" data-filter="copy" data-toggle="tooltip" data-orignal-title="copy"><i data-feather="copy"></i>&nbsp;Copy Link</div>
                             </div>
                         </div>
                     </div>

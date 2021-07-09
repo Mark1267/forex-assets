@@ -73,7 +73,8 @@ function emailVerify($user_id){
         "{EMAIL_TITLE}" => "Email Verification",
         "#verification_link#" => $V_LINK,
         "{TO_EMAIL}" => $user['email'],
-        "#logo#" => $logo
+        'TOP' => XMAIL['TOP'],
+        'BOTTOM' => XMAIL['BOTTOM']
     );
     mailing($template_file, $swap_var);
 }
@@ -173,6 +174,9 @@ if (isset($_POST['signup']) || isset($_POST['adminAdd'])) {
          $cpassword = $_POST['cpassword'];
          $email = $_POST['email'];
          $username = $_POST['username'];
+         if(isset($_POST['ref'])){
+           $ref = $_POST['ref'];
+         }
     }
 }
 
@@ -262,14 +266,12 @@ if(isset($_POST['addFunds'])){
         $newBalance = $oldBalance + $_POST['amount'];
         $user_id = update($table, $user['id'], ['balance' => $newBalance]);
         $template_file = '../mail/bonus.php';
-        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#fullname#" => $_POST['firstname'],
             "{TITLE}" => $_POST['subject'],
             "{EMAIL_TITLE}" => $_POST['subject'],
             "{TO_NAME}" => $_POST['firstname'] . ' ' . $_POST['lastname'],
             "{TO_EMAIL}" => $_POST['email'],
-            "{LOGO}" => $logo,
             "{REASON}" => 'BONUS',
             "{MESSAGE}" => $_POST['reason'],
             "{C_BALANCE}" => $C_BALANCE['SUM(currentInvestment)'],
@@ -279,7 +281,9 @@ if(isset($_POST['addFunds'])){
             "{P_WITHDRAWALS}" => $pendingWithdrawals['SUM(amount)'],
             "{T_WITHDRAWALS}" => $allWithdrawals['SUM(amount)'],
             "#remarks#" => "Successfull",
-            "#datetime" => date('F j, Y h:i:s')
+            "#datetime" => date('F j, Y h:i:s'),
+            'TOP' => XMAIL['TOP'],
+            'BOTTOM' => XMAIL['BOTTOM']
         );
         mailing($template_file, $swap_var);
         
@@ -377,7 +381,9 @@ if(isset($_POST['forget-mail'])){
             "{EMAIL_TITLE}" => 'Password Reset',
             "{TO_EMAIL}" => $user['email'],
             "#logo#" => $logo,
-            "{V_LINK}" => $V_LINK
+            "{V_LINK}" => $V_LINK,
+            'TOP' => XMAIL['TOP'],
+            'BOTTOM' => XMAIL['BOTTOM']
 
         );
         mailing($template_file, $swap_var);

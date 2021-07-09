@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" style="padding: 0; margin: 0;">
-<!-- #name# #verification_link# -->
-
-<body style="padding: 0; margin: 0; background: rgb(248, 248, 248); font-family: Arial; font-size: 14px;">
-    <div style="background-color:white; max-width: 600px; margin: 0px auto; position: relative;">
-        <div style="padding: 10px; background: #373435; min-height: 60px;">
-            <div style="margin: 0px auto; width: 66.66%;">
-                <img src="#logo#" alt="Forex-Assets_logo" class="img-fluid" style="width: 100px; vertical-align: middle;">
-            </div>
-        </div>
-        <div style="position: relative; padding: 25px;">
+TOP
             <div class="col-12" style="width: 100% !important; font-size: 30px;">
                 <h4 style="text-align: center; text-transform: capitalize; margin: 0;">Welcome To Forex-Assets</h4>
             </div>
@@ -33,18 +22,4 @@
                 <p style="line-height: 20px;">Now you're ready to start investing in Forex-Assets diversified portfolios. Good luck on your journey.</p>
                 <a href="https://Forex-assets.co.uk/pricing" class="btn" style="margin: 15px auto; display: block; text-align: center; padding: 16px 30px; border-radius: 4px; border: 2px solid #ffcc29; color: #ffcc29; background-color: #ffff; text-decoration: none;">Start Investing</a>
             </div>
-        </div>
-        <br><br>
-    <footer style="background-color: white; color: #c7c7c7; text-align: center; font-size: 11px;">
-        <div style="background-color: #ffcc29; color: white; padding: 20px 0px;">
-            <p>Great to have you on board</p>
-        </div>
-            <center style="padding: 10px;"><p>Dalton House, 60 Windsor Ave,
-London, UK SW19 2RR</p>
-            <span style="margin: 3px 7px;">Mail: support@forex-assets.co.uk</span><br>
-            <span style="margin: 3px 7px;">Phone: (+44) 791-921-4075</span></center>
-    </footer>
-    </div>
-</body>
-
-</html>
+        BOTTOM

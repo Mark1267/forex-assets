@@ -31,8 +31,11 @@ data-open="click" data-menu="vertical-menu" data-col="1-column">
                   <div class="card-body p-1">
                     <form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" novalidate>
                       <div class="row">
-                        <?php if(isset($_GET['ref'])):?>
-                          <input type="hidden" name="ref" value="<?php echo $_GET['ref']; ?>">
+                        <?php if(isset($_GET['ref']) || isset($_POST['ref'])):?>
+                          <?php if(isset($_GET['ref'])){
+                              $ref = $_GET['ref'];
+                          }?>
+                          <input type="hidden" name="ref" value="<?php echo $ref; ?>">
                         <?php endif;?>
                         <div class="col-12 col-sm-6 col-md-6">
                           <fieldset class="form-group position-relative has-icon-left">

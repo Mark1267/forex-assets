@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" style="padding: 0; margin: 0;">
-<!-- #name# #verification_link# -->
-
-<body style="padding: 0; margin: 0; background: rgb(248, 248, 248); font-family: Arial; font-size: 15px;">
-    <div style="background-color:white; max-width: 1000px; margin: 0px auto; position: relative;">
-        <div style=" padding: 10px; background: #373435; color: #ffff;">
-            <div style="margin: 0px auto; width: 55.66%;">
-                <img src="#logo#" alt="forex-assets_logo" style="width: 100%; vertical-align: middle;">
-            </div>
-        </div>
-        <div style="position: relative; padding: 10px;">
+TOP
             <div style="width: 100% !important; font-size: 30px;">
                 <h4 style="text-align: center; text-transform: capitalize; margin: 0;">Investment Notification.</h4>
             </div>
                 <p>Hi #name#, </p>
             <div style="padding: 5px; word-wrap: break-word;">
                 <span style="line-height: 20px;">Thank you for your deposit!. We've received your deposit request Transaction ID: <span style="font-family: monospace;">#trans_id#</span>, We will notify you when we receive the payment.</span>
-                <a href="https://forex-assets.exchange/signin" class="btn" style="margin: 15px auto; display: block; text-align: center; padding: 16px 30px; border-radius: 4px; color: white; background-color: #ffcc29;; text-decoration: none;">Dashboard</a>
+                <a href="https://wievatrade.com/signin" class="btn" style="margin: 15px auto; display: block; text-align: center; padding: 16px 30px; border-radius: 4px; color: white; background-color: #ffcc29;; text-decoration: none;">Dashboard</a>
                 <center style="margin-top: 40px;"><span style="margin-top: 30px;">Invoice Details</span></center>
                 <table cellspacing="3" style="width: 100%; text-align: left; border: 2px dashed #373435; color: #ffff;">
                 <tr style="padding: 10px; background-color:  #c7c1c3;">
@@ -54,16 +43,4 @@
 
             </table>
             </div>
-        </div>
-        <br><br>
-    <footer style="background-color: #373534; color: #c7c7c7; text-align: center; font-size: 12px;">
-        <div style="background-color: #ffcc29; color: #373534; padding: 10px 0px; color: #373534;">
-            <p>Great to have you on board</p>
-        </div>
-            <center style="padding: 10px;"><p>18, 6 Wester Hailes Park,<br> Edinburgh EH14 3AF, United Kingdom</p>
-            <span style="margin: 3px 7px;">support@forex-assets.exchange</span>
-    </footer>
-    </div>
-</body>
-
-</html>
+        BOTTOM

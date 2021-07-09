@@ -85,7 +85,6 @@ if(isset($_GET['id']) && isset($_GET['action'])){
         $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'type' => 'success', 'message' => $message, 'status' => 1]);
         $user = selectOne('users', ['id' => $transaction['user_id']]);
         $template_file = '../mail/investS.php';
-        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#name#" => $user['firstname'],
             "#name2#" => $user['lastname'],
@@ -96,9 +95,10 @@ if(isset($_GET['id']) && isset($_GET['action'])){
             "#amount#" => $transaction['amount'], 
             "#currency#" => $account['name'],
             "#remarks#" => $account['name'] . ' Deposit Method',
-            "#logo#" => $logo, 
             "#trans_id#" => $transaction['trans_id'],
-            '#datetime#' => date('Y-m-d : h:i:s a')
+            '#datetime#' => date('Y-m-d : h:i:s a'),
+            'TOP' => XMAIL['TOP'],
+            'BOTTOM' => XMAIL['BOTTOM']
         );
         mailing($template_file, $swap_var);
         $_SESSION['message'] = 'Deposit Accepted Successfully';
@@ -126,7 +126,6 @@ if(isset($_GET['with_id']) && isset($_GET['action'])){
         $balance = $user['balance'] - $transactions['amount'];
         $newUser = update('users', $user['id'], ['balance' => $balance]);
         $template_file = '../mail/withdrawalS.php';
-        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             "#name#" => $user['firstname'],
             "#fullname#" => $user['firstname'] . ' ' . $user['lastname'],
@@ -136,9 +135,10 @@ if(isset($_GET['with_id']) && isset($_GET['action'])){
             "#amount#" => $transactions['amount'], 
             "#currency#" => $account['name'],
             "#remarks#" => $account['name'] . ' Withdrawal Method',
-            "#logo#" => $logo, 
             "#trans_id#" => $transactions['trans_id'],
-            '#datetime#' => date('Y-m-d : h:i:s a')
+            '#datetime#' => date('Y-m-d : h:i:s a'),
+            'TOP' => XMAIL['TOP'],
+            'BOTTOM' => XMAIL['BOTTOM']
         );
         mailing($template_file, $swap_var);
         $_SESSION['message'] = 'Withdrawal Accepted';
@@ -227,7 +227,6 @@ if(isset($_POST['deposit-btn'])){
         $feeds = create('feeds', ['user_id' => $_SESSION['id'], 'message' => $message, 'type' => 'success', 'status' => 0]);
         
         $template_file = 'investMail.php';
-        $logo = BASE_URL . '/assets/open/images/logo-white.png';
         $swap_var = array(
             '#name#' => $_SESSION['firstname'],
             "#name2#" => $user['lastname'],
@@ -239,8 +238,9 @@ if(isset($_POST['deposit-btn'])){
             "#wallet#" => $_POST['receiver_address'],
             "#remarks#" => $account['name'] . ' Deposit Method',
             "#amount#" => $_POST['amount'],
-            "#logo#" => $logo,
-            '#datetime#' => date('Y-m-d : h:i:s a')
+            '#datetime#' => date('Y-m-d : h:i:s a'),
+            'TOP' => XMAIL['TOP'],
+            'BOTTOM' => XMAIL['BOTTOM']
         );
         mailing($template_file, $swap_var);
         header('location:' . BASE_URL . '/dashboard/user/promt.php?trans_id=' . $_POST['trans_id']);
@@ -287,8 +287,9 @@ if (isset($_POST['withdraw'])) {
                 "#wallet#" => $_POST['receiver_address'],
                 "#remarks#" => $account['name'] . ' Withdrawal Method',
                 "#amount#" => $_POST['amount'],
-                "#logo#" => $logo,
-                '#datetime#' => date('Y-m-d : h:i:s a')
+                '#datetime#' => date('Y-m-d : h:i:s a'),
+                'TOP' => XMAIL['TOP'],
+                'BOTTOM' => XMAIL['BOTTOM']
             );
             mailing($template_file, $swap_var);
             $_SESSION['message'] = '<b>Withdrawal Request</b> made successfully';
@@ -322,8 +323,7 @@ if(isset($_POST['confirmDeposit']) || isset($_POST['confirmWithdrawal'])){
             update($table2, $id, $_POST);
             $transaction = selectOne($table2, ['id' => $id]);
             $account = selectOne('accounts', ['id' => $transaction['account_id']]);
-            #send mail to user
-            $logo = BASE_URL . '/assets/dashboard/images/logo-full.png';        
+            #send mail to user      
                 $template_file = 'dconfirm.php';
                 $swap_var = array(
                 "#fullname#" => $_SESSION['firstname'] . ' ' . $_SESSION['lastname'],
@@ -336,8 +336,9 @@ if(isset($_POST['confirmDeposit']) || isset($_POST['confirmWithdrawal'])){
                 '#type#' => 'Deposit Confirmation',
                 "#remarks#" => $account['name'] . ' Deposit Method',
                 "#amount#" => $transaction['amount'],
-                "#logo#" => $logo,
-                '#datetime#' => date('Y-m-d : h:i:s a')
+                '#datetime#' => date('Y-m-d : h:i:s a'),
+                'TOP' => XMAIL['TOP'],
+                'BOTTOM' => XMAIL['BOTTOM']
             );
             mailing($template_file, $swap_var);
             $transaction = selectOne($table2, ['id' => $id]);
@@ -371,8 +372,9 @@ if(isset($_POST['confirmDeposit']) || isset($_POST['confirmWithdrawal'])){
                 '#type#' => 'Withdrawal Successful',
                 "#remarks#" => $account['name'] . ' Withdrawal Method',
                 "#amount#" => $transaction['amount'],
-                "#logo#" => $logo,
-                '#datetime#' => date('Y-m-d : h:i:s a')
+                '#datetime#' => date('Y-m-d : h:i:s a'),
+                'TOP' => XMAIL['TOP'],
+                'BOTTOM' => XMAIL['BOTTOM']
             );
             mailing($template_file, $swap_var);
             #send mail to user
