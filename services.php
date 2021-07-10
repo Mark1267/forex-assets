@@ -13,7 +13,7 @@ $title = 'Our Services';
 
 
 <!--PAGE TITLE-->
-<section class="page_header">
+<section class="page_header" style="background-position: center !important; background-size: cover !important; background: url(<?php echo BASE_URL . '/assets/open/images/a1.jpg'?>) no-repeat !important; padding: 110px 0;">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
@@ -45,7 +45,7 @@ $title = 'Our Services';
       <div class="col-sm-4">
         <div class="service_wrap heading_space">
           <div class="image bottom10">
-            <img src="https://www.cmswire.com/-/media/4f09da9235da4e3fa49a4c24d824bd99.ashx" alt="our Team">
+            <img src="<?php echo BASE_URL . '/assets/open/images/13.jpg'?>" alt="our Team">
             <div class="overlay">
               <a href="<?php echo BASE_URL . '/detail'; ?>" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
             </div>
@@ -58,7 +58,7 @@ $title = 'Our Services';
       <div class="col-sm-4">
         <div class="service_wrap heading_space">
           <div class="image bottom10">
-            <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1145044938%2F0x0.jpg%3Ffit%3Dscale" alt="our Team">
+            <img src="<?php echo BASE_URL . '/assets/open/images/14.jpg'?>" alt="our Team">
             <div class="overlay">
               <a href="<?php echo BASE_URL . '/detail'; ?>" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
             </div>

@@ -13,7 +13,7 @@ $title = 'Our Services';
 
 
 <!--PAGE TITLE-->
-<section class="page_header">
+<section class="page_header" style="background-image: url(<?php echo BASE_URL . '/assets/open/images/14.jpg'?>) !important;">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
@@ -60,7 +60,7 @@ $title = 'Our Services';
           <div id="tab1" class="tab_content">
             <div class="services_content">
               <div class="row">
-                <div class="col-md-8"> <img src="https://www.cmswire.com/-/media/4f09da9235da4e3fa49a4c24d824bd99.ashx" alt="service details" class="img-responsive"> </div>
+                <div class="col-md-8"> <img src="<?php echo BASE_URL . '/assets/open/images/13.jpg'?>" alt="service details" class="img-responsive"> </div>
                 <div class="col-md-4">
                   <div class="owl-carousel bottom20" id="service_slider">
                     <div class="item">
@@ -160,7 +160,7 @@ We will remain a privately owned, independent firm to ensure that we act in the 
           <div id="tab2" class="tab_content">
             <div class="services_content">
               <div class="row">
-                <div class="col-md-8"> <img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1145044938%2F0x0.jpg%3Ffit%3Dscale" class="img-responsive"> 
+                <div class="col-md-8"> <img src="<?php echo BASE_URL . '/assets/open/images/14.jpg'?>" class="img-responsive"> 
                 </div>
                 <div class="col-md-4">
                   <div class="owl-carousel bottom20" id="service_slider">

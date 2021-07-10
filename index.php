@@ -217,6 +217,26 @@ $title = 'Home';
 </section>
 <!--info text ends-->
 
+<!--Video-->
+<section id="bg-video" class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 video wow fadeInLeft"  data-wow-delay="500ms">
+        <img src="<?php echo BASE_URL . '/assets/open/images/15.jpg'?>" alt="video">
+       <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=8ac832&amp;wmode=opaque" 
+      class="html5lightbox video-btn" data-width="900" data-height="420" title="WievaTrade in partnership with.. "><i class="icon-play2"></i></a> 
+      </div>
+      <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight"  data-wow-delay="500ms">
+        <h2 class="bottom30 text-capitalize">About  <span class="green_t">WievaTrade</span></h2>
+        <p class="bottom30">WievaTrade Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products.</p>
+        <p class="bottom30"> All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
+        <a href="<?php echo BASE_URL . '/signin'; ?>" class="btn-white text-uppercase border_radius">get started</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video ends-->
+
 <!--Facts Counter & Grid-->
 <section id="facts" class="padding">
   <div class="container">
@@ -243,87 +263,9 @@ $title = 'Home';
         </div>
       </div>
     </div>
-    <div id="grid_layout" class="cbp cbp-l-grid-mosaic-flat">
-        <div class="cbp-item">
-            <a href="images/grid1.jpg" class="cbp-lightbox">
-              <img src="images/grid1.jpg" alt="">
-                <div class="overlay">
-                    <div class="overlay_inner">
-                        <h4>Business Graph</h4>
-                        <p>convallis egestas eros Sed ornare</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="cbp-item">
-            <a href="images/grid3.jpg" class="cbp-lightbox">
-                    <img src="images/grid3.jpg" alt="">
-                <div class="overlay">
-                    <div class="overlay_inner">
-                        <h4>Business Graph</h4>
-                        <p>convallis egestas eros Sed ornare</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="cbp-item">
-            <a href="images/grid3.jpg" class="cbp-lightbox">
-                    <img src="images/grid1.jpg" alt="">
-                <div class="overlay">
-                    <div class="overlay_inner">
-                        <h4>Business Graph</h4>
-                        <p>convallis egestas eros Sed ornare</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="cbp-item">
-            <a href="himages/grid3.jpg" class="cbp-lightbox">
-                    <img src="images/grid1.jpg" alt="">
-                <div class="overlay">
-                    <div class="overlay_inner">
-                        <h4>Business Graph</h4>
-                        <p>convallis egestas eros Sed ornare</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="cbp-item">
-            <a href="images/grid3.jpg" class="cbp-lightbox">
-                    <img src="images/grid1.jpg" alt="">
-                <div class="overlay">
-                    <div class="overlay_inner">
-                        <h4>Business Graph</h4>
-                        <p>convallis egestas eros Sed ornare</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
   </div>
 </section>
 <!--Facts & Counters-->
-
-
-<!--Video-->
-<section id="bg-video" class="padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 video wow fadeInLeft"  data-wow-delay="500ms">
-        <img src="https://fortescueinvestment.com/ui/images/video-img.jpg" alt="video">
-       <a href="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=8ac832&amp;wmode=opaque" 
-      class="html5lightbox video-btn" data-width="900" data-height="420" title="WievaTrade in partnership with.. "><i class="icon-play2"></i></a> 
-      </div>
-      <div class="col-sm-6 right_content top40 bottom40 wow fadeInRight"  data-wow-delay="500ms">
-        <h2 class="bottom30 text-capitalize">About  <span class="green_t">WievaTrade</span></h2>
-        <p class="bottom30">WievaTrade Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products.</p>
-        <p class="bottom30"> All funds are designed with institutional clients in mind. We apply strict transparency and execution efficiency criteria across our solutions, with a commitment to maintain market-leading standards for the crypto industry.</p>
-        <a href="<?php echo BASE_URL . '/signin'; ?>" class="btn-white text-uppercase border_radius">get started</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Video ends-->
 
 <section id="team" class="pricesection padding-top padding-bottom-half light">
   <div class="row">
@@ -368,21 +310,27 @@ $title = 'Home';
       </div>
     </div>
     <div class="row">
+    <style>
+    .item img{
+      border: 2px solid #36066b;
+      border-radius: 4px;
+    }
+    </style>
           <div class="owl-carousel bottom20" id="news_slider">
             <div class="item">
-                <img src="https://www.sm-experts.com/uploads/images/59c4a_team.jpg" style="width: 100%; height: 240px" alt="video">
+                <img src="<?php echo BASE_URL . '/assets/open/images/mt1.jpg'?>" style="width: 100%;" alt="video">
             </div>
             <div class="item">
-                <img src="https://www.corporateeventnews.com/sites/default/files/styles/large/public/man-3365368_1280.jpg?itok=7yqoVSNK" style="width: 100%; height: 240px" alt="video">
+                <img src="<?php echo BASE_URL . '/assets/open/images/mt2.jpg'?>" style="width: 100%;" alt="video">
             </div>
             <div class="item">
-                <img src="https://ascs1.com/wp-content/uploads/team-of-workers.jpg" style="width: 100%; height: 240px" alt="video">
+                <img src="<?php echo BASE_URL . '/assets/open/images/mt3.jpg'?>" style="width: 100%;" alt="video">
             </div>
             <div class="item">
-                <img src="https://assets.entrepreneur.com/content/3x2/2000/20170731092357-business-businessteam-working-training.jpeg" style="width: 100%; height: 240px" alt="video">
+                <img src="<?php echo BASE_URL . '/assets/open/images/mtt3.jpg'?>" style="width: 100%;" alt="video">
             </div>
             <div class="item">
-                <img src="https://www.saxonstrainingfacilities.com.au/blog/wp-content/uploads/2016/09/team-player-work.jpg" style="width: 100%; height: 240px" alt="video">
+                <img src="<?php echo BASE_URL . '/assets/open/images/mtt1.jpg'?>" style="width: 100%;" alt="video">
             </div>
           </div>
     </div>
@@ -454,7 +402,11 @@ $title = 'Home';
         <h2 class="bottom10 text-capitalize">News & <span class="blue_t">Thoughts </span></h2>
       </div>
     </div>
-      <div class="row">
+      <div class="row"><style>
+      .hjy{
+        color: #000 !important;
+      }
+      </style>
         <div class="col-md-12">
         <div id="news_slider1" class="owl-carousel">
           <?php $posts = selectAllLimits('posts', [], 0, 10); ?>
@@ -464,8 +416,8 @@ $title = 'Home';
               <div class="news">
                 <div class="image"><img width="100px" src="<?php echo BASE_URL . '/assets/dashboard/images/posts/' . $post['image']; ?>" alt="News"></div>
                 <div class="news_text" style="word-wrap: break-word;">
-                  <h4 class="bottom10"><a href="<?php echo BASE_URL . '/newsdetail.php?id=' . $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
-                  <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?></p>
+                  <h4 class="bottom10 hjy"><a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
+                  <p class="hjy"><?php echo strip_tags(html_entity_decode(substr($post['body'], 0, 350) . '...')); ?></p>
                   <ul class="news_crumb">
                     <li><a href="#."><?php echo $user['firstname'] . ' ' . $user['lastname']; ?></a></li>
                     <li><a href="#."><?php echo date('F j, Y', strtotime($post['created_at'])); ?></a></li>

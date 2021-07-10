@@ -15,7 +15,7 @@ $title = '404';
 
 
 <!--Page Title -->
-<section class="page_header">
+<section class="page_header" style="background: url(<?php echo BASE_URL . '/assets/open/images/a2.jpg'?>) !important; background-attachment: fixed !important; background-size: cover !important;">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">

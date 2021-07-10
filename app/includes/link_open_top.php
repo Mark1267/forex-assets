@@ -20,5 +20,9 @@
     <script>
         new WOW().init();
     </script>
-
+<style>
+.page_header{
+    background-position: bottom !important; background-size: cover !important;}
+    
+    </style>
 </head>

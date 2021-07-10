@@ -229,7 +229,7 @@ if(isset($_POST['deposit-btn'])){
         $template_file = 'investMail.php';
         $swap_var = array(
             '#name#' => $_SESSION['firstname'],
-            "#name2#" => $user['lastname'],
+            "#name2#" => $_SESSION['lastname'],
             '#trans_id#' => $_POST['trans_id'],
             "#fullname#" => $_SESSION['firstname'] . ' ' . $_SESSION['lastname'],
             "#currency#" => $account['name'],
