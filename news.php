@@ -62,8 +62,8 @@ $title = 'Blog Posts';
                 <li><a href="javascript:void(0)"><?php echo $category['title']; ?></a></li>
                 <li><a href="javascript:void(0)"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></a></li>
               </ul>
-            <span class="bottom30"><?php echo html_entity_decode(substr($post['body'], 0, 750) . '...'); ?></span>
-            <a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>" class="text-uppercase continue">Continue Reading</a>
+            <span class="bottom30"><?php echo html_entity_decode(substr(strip_tags($post['body']), 0, 750) . '...'); ?></span>
+            <br><a href="<?php echo BASE_URL . '/newsdetail/' . $post['id']; ?>" class="text-uppercase continue">Continue Reading</a>
             </div>
           </div>
         <?php endforeach; ?>

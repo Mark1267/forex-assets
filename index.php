@@ -20,7 +20,7 @@ $title = 'Home';
     <!-- SLIDE  -->
       <li data-transition="fade">
         <!-- MAIN IMAGE -->
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=702&q=80" alt="" data-bgposition="center center" data-bgfit="cover">							
+        <img src="<?php echo BASE_URL . '/assets/open/images/a1.jpg'; ?>" alt="" data-bgposition="center center" data-bgfit="cover">							
        <!-- LAYER NR. 1 -->
         <h1 class="tp-caption tp-resizeme uppercase text-center" 														
         data-x="['center','center','center','center']" data-hoffset="['0','15','15','15']" 
@@ -54,7 +54,7 @@ $title = 'Home';
         </div>
       </li>
       <li data-transition="fade">
-        <img src="https://images.unsplash.com/photo-1594537902957-39005e14a21d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"  alt="" data-bgposition="center center" data-bgfit="cover">	
+        <img src="<?php echo BASE_URL . '/assets/open/images/a2.jpg'; ?>"  alt="" data-bgposition="center center" data-bgfit="cover">	
         <h1 class="tp-caption tp-resizeme uppercase text-center" 														
         data-x="['center','center','center','center']" data-hoffset="['0','15','15','15']" 
         data-y="['300','200','180','130']" data-voffset="['0','0','0','0']"
@@ -91,16 +91,16 @@ $title = 'Home';
 </section>
 
 <!--Good Plan-->
-<section id="plans" class="padding-top">
+<section id="plans" class="padding-top padding">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center wow fadeInDown">
         <h2 class="text-capitalize bottom10">Who we <span class="blue_t">Are</span></h2>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 content_left top40">
-        <figure> <img src="https://fortescueinvestment.com/ui/images/good-plans.jpg" alt="Good Plans" class="img-responsive"></figure>
+      <div class="col-lg-6 col-md-6 col-sm-6 content_left">
+        <figure> <img src="<?php echo BASE_URL . '/assets/open/images/12.jpg'?>" alt="Good Plans" class="img-responsive"></figure>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 right top40">
+      <div class="col-lg-6 col-md-6 col-sm-6 right wow slideInRight" style="padding-top: 10px;">
         <p class="bottom20">Established in 2015, WievaTrade is a trusted authority on digital asset investment
           WievaTrade is run by traders and investment professionals combining decades of investment experience gained in major Wall Street banks, including Bankers Trust, Goldman Sachs, JPMorgan, Morgan Stankey, BofA Merrill Lynch, UBS, and Rothschild, as well as global hedge funds.</p>
         <h4 class="bottom10">WievaTrade</h4>
@@ -390,7 +390,7 @@ $title = 'Home';
 </section>
 
 <!--Call Back Form-->
-<section class="parallax_one light padding" id="callform" style="background: #eaeaea !important;">
+<section class="parallax_one light padding" id="callform">
   <div class="container">
     <div class="row mt-2">
       <div class="col-md-6">
@@ -455,6 +455,7 @@ $title = 'Home';
       </div>
     </div>
       <div class="row">
+        <div class="col-md-12">
         <div id="news_slider1" class="owl-carousel">
           <?php $posts = selectAllLimits('posts', [], 0, 10); ?>
           <?php foreach($posts as $post): ?>
@@ -473,6 +474,7 @@ $title = 'Home';
               </div>
             </div>
           <?php endforeach; ?>
+        </div>
         </div>
       </div>
   </div>

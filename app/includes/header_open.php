@@ -13,9 +13,12 @@
       nav.navbar.bootsnav ul.nav>li>a {
     color: #ffffff;
 }
+.main-l{
+  transform: translATW
+}
       </style>
 <header class="layout_fifth">
-  <nav class="navbar navbar-default brand-center navbar-fixed bootsnav" style="background-color: #373435 !important;">
+  <nav class="navbar navbar-default brand-center navbar-fixed bootsnav" style="background-color: #37066b !important;">
     <div class="container">      
       <div class="row">
         <div class="col-sm-12">
@@ -25,8 +28,8 @@
           <i class="fa fa-bars"></i>
           </button>
           <a class="navbar-brand" href="<?php echo BASE_URL . '/'; ?>">
-            <img src="<?php echo FAVI;?>" class="FAVI logo-display" alt="" style="width: 150px; margin-top: 15px;">
-            <img src="<?php echo FAVI;?>" class="logo logo-scrolled" alt="" style="width: 150px; margin-top: 15px;">
+            <img src="<?php echo LOGO;?>" class="logo logo-display main-l" alt="" style="width: 150px; margin-top: 15px;">
+            <img src="<?php echo LOGO;?>" class="logo logo-scrolled main-l" alt="" style="width: 150px; margin-top: 15px;">
           </a>
         </div> <!-- End Header Navigation -->
         <!-- Collect the nav links, forms, and other content for toggling -->

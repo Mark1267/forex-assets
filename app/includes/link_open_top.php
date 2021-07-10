@@ -14,6 +14,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/assets/open/'?>css/bootsnav.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/assets/open/'?>css/loader.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/assets/open/'?>css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/assets/open/'?>css/color.css">
     <link rel="icon" href="<?php echo FAVI; ?>">
+<script src="<?php echo BASE_URL . '/assets/open/'?>js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </head>

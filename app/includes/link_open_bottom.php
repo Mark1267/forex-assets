@@ -18,7 +18,6 @@
 <script src="<?php echo BASE_URL . '/assets/open/'?>js/revolution.extension.parallax.min.js"></script>
 <script src="<?php echo BASE_URL . '/assets/open/'?>js/revolution.extension.slideanims.min.js"></script>
 <script src="<?php echo BASE_URL . '/assets/open/'?>js/revolution.extension.video.min.js"></script>
-<script src="<?php echo BASE_URL . '/assets/open/'?>js/wow.min.js"></script>
 <script src="<?php echo BASE_URL . '/assets/open/'?>js/functions.js"></script>
 <script>
      $("#news_slider, #news_slider1").owlCarousel({

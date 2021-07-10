@@ -59,6 +59,10 @@ html {
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ol,
 ul {
     margin: 0;
@@ -1548,7 +1552,7 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a {
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu>li>a,
 nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu>li>a {
-    color: #000;
+    color: #ffcc29;
     padding: 10px 15px;
     font-size: 14px;
 }
@@ -2174,7 +2178,7 @@ nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu>li>a:focus {
 /* ----------------- Parallax Backgrounds ----------------- */
 
 .parallax_one {
-    background: url(https://fortescueinvestment.com/ui/images/parallax-one.jpg) no-repeat;
+    background: url(../images/hydra.jpg) no-repeat !important;
 }
 
 .parallax_one,
@@ -3198,11 +3202,6 @@ ul.check li>i {
     top: 38px;
 }
 
-.bg_contact.bg_one {
-    background: url(../images/bg-contact.jpg) no-repeat;
-    background-position: center right;
-}
-
 .bg_contact.bg_two {
     background: url(../images/bg-contact2.jpg) no-repeat;
     background-position: center right;
@@ -3624,7 +3623,7 @@ ul.check li>i {
 }
 @media screen and (min-width: 66.25em) {
     .pricing-palden .pricing-item {
-        margin: 1em -0.5em;
+        margin: 1em 0.5em;
     }
     
     .pricing-palden .pricing__item--featured {
@@ -3715,4 +3714,44 @@ ul.check li>i {
 }
 .pricing-palden .pricing-item--featured .pricing-deco {
     padding: 5em 0 8.885em 0;
+}
+.light {
+    background: linear-gradient(180deg, #36066b, #601177, #69066A);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sans-serif;
+}
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light p {
+    color: white;
+}
+#info .text_box span {
+    background: none;
+}
+#info .text_box span i {
+    color: white;
+}
+#partner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bg_contact.bg_one {
+    background: url(../images/hydra.jpg) no-repeat !important;
+    background-position: bottom;
+}
+.pricing-palden .pricing-deco {
+    background: rgb(103 7 107);
+}
+.pricing-palden .pricing-action {
+    background: #41096e;
 }

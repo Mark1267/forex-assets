@@ -1,5 +1,5 @@
 <!--Partners-->
-<section id="partner" class="padding-bottom-half padding-top">
+<section id="partner" class="padding">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center wow fadeInDown">
@@ -14,8 +14,8 @@
         <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/2.jpeg" style="width: 270px;" alt="our Partner"></div>
         <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/3.jpeg" style="width: 270px;" alt="our Partner"></div>
         <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/4.jpeg" style="width: 270px;" alt="our Partner"></div>
-        <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/5.jpeg" style="width: 270px;" alt="our Partner"></div>
-        <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/6.jpeg" style="width: 270px;" alt="our Partner"></div>
+        <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/77.jpeg" style="width: 270px;" alt="our Partner"></div>
+        <div class="item"><img src="<?php echo BASE_URL . '/assets/open/'; ?>images/6.png" style="width: 270px;" alt="our Partner"></div>
       </div>
     </div>
   </div>

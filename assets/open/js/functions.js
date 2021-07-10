@@ -264,7 +264,7 @@
 
       // =========== Parallax ===========
       $(".parallax").parallax("50%", 0.3);
-      $(".parallax_one").parallax("50%", 0.3);
+      $(".parallax_one").parallax("50%", -0.7);
       $(".parallax_two").parallax("50%", 0.3);
       $("#bg-video").parallax("50%", -0.7);
       $(".parallax_news").parallax("50%", -0.5);
