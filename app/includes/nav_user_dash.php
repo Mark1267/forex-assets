@@ -10,7 +10,7 @@
                         <?php else:?>
                             <a class="navbar-brand" href="<?php echo BASE_URL . '/dashboard/user/'; ?>">
                         <?php endif; ?>
-                            <img class="brand-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/open/';?>images/logo-dark.png">
+                            <img class="brand-logo dash-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo LOGO; ?>">
                         </a>
                     </li>
                     <li class="nav-item d-md-none">
@@ -235,7 +235,7 @@
                 <ul class="nav navbar-nav flex-row">
                     <li class="nav-item col-12 text-center">
                         <a class="navbar-brand" href="index.html">
-                        <img class="brand-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo BASE_URL . '/assets/open/';?>images/logo-dark.png">
+                        <img class="brand-logo dash-logo" style="width: 150px; padding: 10px;" alt="modern admin logo" src="<?php echo LOGO; ?>">
                         </a>
                     </li>
                 </ul>

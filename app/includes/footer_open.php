@@ -31,7 +31,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 footer_panel heading_space">
-        <a href="<?php echo BASE_URL . '/'; ?>"  class="footer_logo bottom30" style="padding: 5px; border-radius: 3px;"><img src="<?php echo BASE_URL . '/assets/open/';?>images/logo-white.png" style="width: 140px;" alt="WievaTrade"></a>
+        <a href="<?php echo BASE_URL . '/'; ?>"  class="footer_logo bottom30" style="padding: 5px; border-radius: 3px;"><img src="<?php echo TEXT2;?>" style="width: 140px;" alt="WievaTrade"></a>
         <p class="bottom30">WievaTrade Digital Asset Management is an investment manager connecting traditional finance with the digital assets market. The firm deploys highly sophisticated low-latency algorithmic trading, pursuing a range of arbitrage strategies in both spot and derivative markets, as well as a range of directional buy-and-hold products. </p>
         <ul class="social_icon">
           <li><a href="#." class="facebook"><i class="fa fa-facebook"></i></a></li>

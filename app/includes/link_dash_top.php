@@ -31,4 +31,11 @@
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL . '/assets/dashboard/'?>css/style.css">
     <!-- END Custom CSS-->
+    <style>
+    .dash-logo{
+      background: #673ab7;
+    padding: 5px;
+    border-radius: 4px;
+    }
+    </style>
 </head>

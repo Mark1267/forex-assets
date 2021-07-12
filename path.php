@@ -27,9 +27,10 @@ if($LOCAL){
     define('DB_NAME', 'u482663892_forexassets');
     define("DEMO", FALSE);
 }
-define('LOGO', BASE_URL . '/assets/open/imagesh/main.png');
-define('FAVI', BASE_URL . '/assets/open/images/favi.png');
-define('TEXT', BASE_URL . '/assets/open/images/text.png');
+define('LOGO', BASE_URL . '/assets/open/images/logo/main.png');
+define('FAVI', BASE_URL . '/assets/open/images/logo/favi.png');
+define('TEXT', BASE_URL . '/assets/open/images/logo/text.png');
+define('TEXT2', BASE_URL . '/assets/open/images/logo/text-2.png');
 
 include('reuseables.php');
 ?>

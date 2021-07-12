@@ -13,9 +13,6 @@
       nav.navbar.bootsnav ul.nav>li>a {
     color: #ffffff;
 }
-.main-l{
-  transform: translATW
-}
       </style>
 <header class="layout_fifth">
   <nav class="navbar navbar-default brand-center navbar-fixed bootsnav" style="background-color: #37066b !important;">
