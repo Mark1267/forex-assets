@@ -33,7 +33,7 @@
     <!-- END Custom CSS-->
     <style>
     .dash-logo{
-      background: #673ab7;
+      background: #673ab7;width: 100px;
     padding: 5px;
     border-radius: 4px;
     }
