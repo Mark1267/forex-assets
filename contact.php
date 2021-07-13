@@ -72,7 +72,7 @@ $title = 'Contact Us';
                 <span><i class="icon-location"></i></span>
                 <div class="text">
                   <h4>Address</h4>
-                  <p>Dalton House, 60 Windsor Ave, SW19 2RR London, UK</p>
+                  <p>1800 Highway 26E, Grapevine, TX 76051, United States</p>
                 </div>
                </div>
               </div>

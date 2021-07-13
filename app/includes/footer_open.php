@@ -18,8 +18,8 @@
     <div class="col-sm-3">
       <div class="contact_inner">
         <i class="icon-location"></i>
-        <h5><strong>18, 6 Wester Hailes Park,</strong></h5>
-        <h5>Edinburgh EH14 3AF, UK</h5>
+        <h5><strong>1800 Highway 26E, Grapevine,</strong></h5>
+        <h5>TX 76051, United States</h5>
       </div>
     </div>
   </div>

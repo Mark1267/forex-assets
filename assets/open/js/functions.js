@@ -190,7 +190,8 @@
       var revapi;
       revapi = jQuery("#rev_slider").revolution({
           sliderType: "standard",
-          sliderLayout: "fullwidth",
+          //sliderLayout: "fullwidth",
+          sliderLayout: "fullscreen",
           scrollbarDrag: "true",
           delay: 9000,
           spinner: "off",
