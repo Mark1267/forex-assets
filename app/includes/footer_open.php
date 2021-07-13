@@ -4,7 +4,7 @@
     <div class="col-sm-3">
       <div class="contact_inner">
         <i class="icon-phone4"></i>
-        <h5><strong>(+44) 791-921-4075</strong></h5>
+        <h5><strong>+1(3) 12-685-1896</strong></h5>
         <a href="#.">support@wievatrade.com</a>
       </div>
     </div>

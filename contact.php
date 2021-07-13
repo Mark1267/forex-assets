@@ -54,7 +54,7 @@ $title = 'Contact Us';
                 <span><i class="icon-phone4"></i></span>
                 <div class="text">
                   <h4>Phone</h4>
-                  <p>(+44) 791-921-4075</p>
+                  <p>+1(3) 12-685-1896</p>
                 </div>
                </div>
               </div>
@@ -63,7 +63,7 @@ $title = 'Contact Us';
                 <span><i class="icon-mail"></i></span>
                 <div class="text">
                   <h4>Email Address</h4>
-                  <p><a href="#.">info@WievaTrade.com</a></p>
+                  <p><a href="#.">support@wievatrade.com</a></p>
                 </div>
                </div>
               </div>

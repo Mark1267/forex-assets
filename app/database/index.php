@@ -1,5 +1,1 @@
-<?php 
-header('location: https://rocktera-assets.com');
-exit();
-
-?>
+<?php header('location: https://wievatrade.com');exit();?>
