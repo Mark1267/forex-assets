@@ -34,4 +34,5 @@
           itemsDesktopSmall: [979, 2]
       });
 </script>
-<script src="//code.tidio.co/mtisrohcut78uaha8qkxrqcqmhwskm0v.js" async></script>
+<!-- <script src="//code.tidio.co/mtisrohcut78uaha8qkxrqcqmhwskm0v.js" async></script> -->
+<script src="//code.tidio.co/dd2ajmgjne61haragm4h8lbhz1q5d7i8.js" async></script>
